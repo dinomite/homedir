@@ -1,0 +1,9 @@
+[submodule ".vim"]
+	path = .vim
+	url = git@github.com:dinomite/vim.git
+[submodule "bin/submodules/CmdDirs"]
+	path = bin/submodules/CmdDirs
+	url = git@github.com:dinomite/CmdDirs.git
+[submodule "bin/submodules/git-svn-clone-externals"]
+	path = bin/submodules/git-svn-clone-externals
+	url = git@github.com:dinomite/git-svn-clone-externals.git

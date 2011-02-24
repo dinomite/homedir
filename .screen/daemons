@@ -1,0 +1,26 @@
+source $HOME/.screenrc
+
+sessionname daemons
+chdir /code/htdocs/dstephens/trunk/webroot/daemons
+
+screen -t 'CONTROL' bash
+screen -t 'aggregator' bash
+screen -t 'autoEvent' bash
+screen -t 'bouncedEmail' bash
+screen -t 'campaignAgg' bash
+screen -t 'draftToAct' bash
+screen -t 'contactCSVI' bash
+screen -t 'emailReady' bash
+screen -t 'geniusListWork' bash
+screen -t 'jmsCommandExecutor' bash
+screen -t 'logCollector' bash
+screen -t 'sendOutlook' bash
+screen -t 'sfActivity' bash
+screen -t 'sfEvent' bash
+screen -t 'webToLeadForm' bash
+screen -t 'workflowWait' bash
+select 0
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "

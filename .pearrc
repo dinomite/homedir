@@ -1,0 +1,2 @@
+#PEAR_Config 0.9
+a:10:{s:10:"__channels";a:6:{s:12:"pecl.php.net";a:0:{}s:5:"__uri";a:0:{}s:11:"doc.php.net";a:0:{}s:15:"pear.phpunit.de";a:0:{}s:16:"components.ez.no";a:0:{}s:24:"pear.symfony-project.com";a:0:{}}s:15:"preferred_state";s:6:"stable";s:8:"temp_dir";s:9:"/tmp/pear";s:7:"bin_dir";s:13:"/opt/pear/bin";s:7:"php_dir";s:14:"/opt/pear/PEAR";s:7:"doc_dir";s:19:"/opt/pear/PEAR/docs";s:8:"data_dir";s:19:"/opt/pear/PEAR/data";s:8:"test_dir";s:20:"/opt/pear/PEAR/tests";s:12:"download_dir";s:18:"/tmp/pear/download";s:10:"http_proxy";s:0:"";}

@@ -1,0 +1,19 @@
+escape ^oo
+
+# For use with iTerm
+term linux
+
+startup_message off
+vbell off
+defscrollback 25000
+autodetach on
+multiuser on
+defutf8 on
+nethack on
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
+
+windowlist title "Num Name%=Location Flags"
+windowlist string "%03n %t%=%h %f"

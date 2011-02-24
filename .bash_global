@@ -1,0 +1,111 @@
+#if [ $BASH_GLOBAL ]; then
+#    echo "Not sourcing bash_global again"
+#    return
+#fi
+#BASH_GLOBAL=1
+
+### Paths
+PATH=$HOME/bin:/usr/games:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/games/bin:$PATH
+MANPATH=$HOME/.software/man:/opt/local/man:/opt/local/share/man:$MANPATH
+
+### Prompt variable
+# Color the hostname
+HOSTNAME=`hostname|sed -e 's/\..*$//'`
+if [ $HOSTNAME = 'Titus' ] || [ $HOSTNAME = 'Titus.local' ] || [ $HOSTNAME = 'titus' ]; then
+    export HOST_COLOR="\[\033[1;35m\]"
+fi
+if [ $HOSTNAME = 'claudius' ]; then
+    export HOST_COLOR="\[\033[1;36m\]"
+fi
+if [ $HOSTNAME = 'dev1' ]; then
+    export HOST_COLOR="\[\033[1;34m\]"
+fi
+if [ $HOSTNAME = 'svr-dev-rw1' ]; then
+    export HOST_COLOR="\[\033[1;31m\]"
+fi
+if [ $HOSTNAME = 'drewfus' ]; then
+    export HOST_COLOR="\[\033[1;30m\]"
+fi
+
+# Color the colon red & capitalize hostname if root
+COLON_COLOR='0m'
+if [ ${UID} -eq 0 ]; then
+    COLON_COLOR='1;31m'
+fi
+if [ ${UID} -eq 0 ]; then
+    HOSTNAME="`echo $HOSTNAME|tr '[a-z]' '[A-Z]'`"
+fi
+
+function build_prompt {
+    EXITSTATUS="$?"
+
+    PROMPT="$HOST_COLOR$HOSTNAME\[\033[00m\]\[\e[$COLON_COLOR\]:\[\033[33m\]\w\[\033[00m\]\[\033[01;33m\]\$\[\033[00m\] "
+
+    # Red background if the last command was unhappy
+    if [ "${EXITSTATUS}" -eq 0 ]
+    then
+       PS1="${PROMPT}"
+    else
+       PS1="\[\033[41m\]${PROMPT}"
+    fi
+
+    # Change the titlebar in xterms
+    echo -ne "\033]0;${HOSTNAME}:${PWD}\007"
+}
+PROMPT_COMMAND=build_prompt
+
+### Use full completion, if available
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+# Homebrew installed version
+if [ -e /usr/local/bin/brew ]; then
+    if [ -f `brew --prefix`/etc/bash_completion ]; then
+        . `brew --prefix`/etc/bash_completion
+    fi
+fi
+
+# Ignore .svn directories when completing
+export FIGNORE=".svn"
+bind 'set match-hidden-files off'
+
+# Different options for ls depending on system
+if [ `uname` = Darwin ]; then
+    # MacOS
+    export LS_OPTIONS='-G'
+else
+    if [ `uname` = FreeBSD ]; then
+        export LS_OPTIONS='-G'
+    else
+        # Probably Linux with GNU utils
+        export LS_OPTIONS='--color=auto'
+    fi
+fi
+
+# Make 'ls' output legible
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+### Standard variables
+export PAGER='less'
+export EDITOR='vim'
+export BROWSER='firefox'
+export CC='gcc'
+# Make perl localization work
+export LC_ALL="en_US.UTF-8"
+export LANGUAGE="en_US.UTF-8"
+
+### Capture more history
+#"I know I've used that command before, but I can't remember the syntax"
+export HISTFILESIZE=500000
+export HISTSIZE=100000
+shopt -s histappend
+# Combine multiline commands into one in historty
+shopt -s cmdhist
+# Ignore duplicates, ls without options and builtin commands
+HISTCONTROL=ignoredups
+export HISTIGNORE="[ \t]*:&:ls:ll:la:lh:sl"
+# Store a timestamp in the history
+export HISTTIMEFORMAT='%Y-%m-%d %H:%M:%S - '
+
+### Act like vi
+#set -o vi

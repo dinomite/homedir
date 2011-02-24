@@ -1,0 +1,5 @@
+domain = caligula.dinomite.net
+resource = ssh
+local_port = 4444
+debug_level = 1
+server = caligula.dinomite.net

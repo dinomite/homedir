@@ -1,0 +1,33 @@
+[user]
+    name = Drew Stephens
+    email = drew@clearspring.com
+[alias]
+    st = status -s -b
+    ci = commit
+    co = checkout
+    br = branch
+    info = remote show origin
+    wdiff = diff --color-words
+    l = log --stat --format=format:'"%C(blue)%h %C(cyan)%an %C(blue)(%cn) %ai\n%Cgreen%s\n%b%N"'
+    ahead = log origin/master..HEAD
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = cyan
+[diff]
+    ignoreSubmodules = untracked
+[rebase]
+    autosquash = true
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
+[github]
+    user = dinomite
+    token = 3421200be62a2de098a0059c2d67d705
+[blame]
+    date = short

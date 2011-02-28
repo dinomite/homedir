@@ -1,0 +1,21 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+
+my $applyStash = 0;
+
+my $stashName = "gsrebase " . `date`;
+my $stash = `git stash save $stashName`;
+chomp $stash;
+
+if ($stash ne 'No local changes to save') {
+    print "Stashing local uncommited changes\n";
+    $applyStash = 1;
+}
+
+system('git svn rebase');
+
+if ($applyStash == 1) {
+    print "Applying stash of local uncommited changes\n";
+    system('git stash pop');
+}

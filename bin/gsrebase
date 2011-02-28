@@ -2,6 +2,12 @@
 use strict;
 use warnings;
 
+system("git svn info");
+if ($? != 0) {
+    print "This isn't a git-svn repo!\n";
+    exit(1);
+}
+
 my $applyStash = 0;
 
 my $stashName = "gsrebase " . `date`;

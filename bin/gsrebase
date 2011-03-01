@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-system("git svn info");
+system("git svn info > /dev/null");
 if ($? != 0) {
     print "This isn't a git-svn repo!\n";
     exit(1);

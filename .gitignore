@@ -18,6 +18,7 @@ tmp
 .bash_history
 .bash_local
 .bzr.log
+.cpan
 .cpanm
 .crontab
 .cups

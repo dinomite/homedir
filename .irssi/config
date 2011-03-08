@@ -80,7 +80,6 @@ chatnets = {
     max_kicks = "4";
     max_msgs = "3";
     max_whois = "2";
-    autosendcmd = "/msg nickserv identify jericho";
   };
 
   Debian = {
@@ -88,7 +87,6 @@ chatnets = {
     max_kicks = "4";
     max_msgs = "3";
     max_whois = "2";
-    autosendcmd = "/msg nickserv identify jericho;";
   };
 
   Perl = { type = "IRC"; max_kicks = "4"; max_msgs = "3"; max_whois = "2"; };
@@ -98,7 +96,6 @@ chatnets = {
     max_kicks = "4";
     max_msgs = "3";
     max_whois = "2";
-    autosendcmd = "/msg nickserv identify jericho;";
   };
 };
 

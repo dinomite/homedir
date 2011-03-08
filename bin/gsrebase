@@ -23,5 +23,5 @@ system('git svn rebase');
 
 if ($applyStash == 1) {
     print "Applying stash of local uncommited changes\n";
-    system('git stash pop');
+    system('git stash pop -q');
 }

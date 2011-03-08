@@ -10,6 +10,8 @@ alias sl="ls"
 alias l="ls"
 alias s="ls"
 #alias rm="rm -i"    # Make rming a slow and painful process
+# Show most recent files at the bottom
+alias ltr="ls -ltr"
 
 # Why doesn't everyone have these?
 alias ..="cd .."

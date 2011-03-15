@@ -103,7 +103,7 @@ shopt -s histappend
 shopt -s cmdhist
 # Ignore duplicates, ls without options and builtin commands
 HISTCONTROL=ignoredups
-export HISTIGNORE="[ \t]*:&:ls:ll:la:lh:sl"
+export HISTIGNORE="&:ls:ll:la:lh:sl"
 # Store a timestamp in the history
 export HISTTIMEFORMAT='%Y-%m-%d %H:%M:%S - '
 

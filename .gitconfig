@@ -23,9 +23,6 @@
     untracked = cyan
 [diff]
     ignoreSubmodules = untracked
-#    external = gitvimdiff
-#[pager]
-#    diff =
 [rebase]
     autosquash = true
 [branch "master"]

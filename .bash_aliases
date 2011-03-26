@@ -65,8 +65,7 @@ alias nethack='echo -e "\033c"; nethack'
 alias bcvissh="bcvi --wrap-ssh --"
 alias screen='TERM=screen screen'
 alias jobs="jobs -l"
-alias bwm-ng="bwm-ng -u bytes -T avg"
-alias bwmon='bwmon -b'
+alias bwm-ng="bwm-ng -u bytes -T avg -i getifaddrs"
 alias xterm="xterm -bg black -fg white"
 alias mkisofs="mkisofs -r -R -J -l -f"
 alias svnst='svn st'

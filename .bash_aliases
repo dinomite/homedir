@@ -74,7 +74,6 @@ alias nslookup="nslookup -sil"
 alias tether="ssh -D7070 -l root"
 alias wgetdir="wget -r -nH --no-parent"
 alias wgetmirror="wget --mirror -U Firefox/1.5 -p --html-extension --convert-links"
-alias newriterlogs='screen -c ~/.screen/newriterlogs'
 # Print 2 columns, big header, landscape mode, code highlighting, color,
 # and use arrows to mark wrapped lines
 alias enscript='enscript -2Gr -E --color -C --mark-wrapped-lines=arrow'
@@ -118,26 +117,3 @@ alias scorn="ssh scorn.csh.rit.edu"
 alias jake="ssh jake.csh.rit.edu"
 alias hactar="ssh jake.csh.rit.edu"
 alias rancor="ssh rancor.csh.rit.edu"
-
-##### CS #####
-alias hilly="ssh dgs4466@hilly.cs.rit.edu"
-alias queeg="ssh dgs4466@queeg.cs.rit.edu"
-alias slartibartfast="ssh dgs4466@slartibartfast.cs.rit.edu"
-alias paradox="ssh dgs4466@paradox.cs.rit.edu"
-alias paranoia="ssh dgs4466@paranoia.cs.rit.edu"
-
-##### RIT #####
-alias grace="ssh dgs5364@grace.rit.edu"
-#
-##### Genius #####
-# Open an SSH tunnel from localhost:9999 to drewfus via dev1
-# then, open a dynamic tunnel on localhost:7070 to drewfus
-alias drewfus="ssh -f -N dev1 -L 9999:drewfus.genius.local:22; ssh -D7070 -p 9999 dstephens@localhost"
-alias davinci="ssh dstephens@davinci.gotgenie.com"
-alias higgs="ssh dstephens@higgs.gotgenie.com"
-alias dev1="ssh dstephens@dev1.gotgenie.com"
-alias euclid="ssh dstephens@euclid.gotgenie.com"
-alias einstein="ssh dstephens@einstein.gotgenie.com"
-alias trymarketinggenius.com="ssh dstephens@www.trymarketinggenius.com"
-alias trysalesgenius.com="ssh dstephens@www.trymarketinggenius.com"
-alias rewriterKill='sudo kill `ps aux|grep rewriter|grep root|grep httpd|cut -c10-14`'

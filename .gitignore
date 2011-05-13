@@ -40,3 +40,5 @@ tmp
 .vim-fuf-data
 .viminfo
 .xscreensaver-getimage.cache
+.wireshark-etc/
+.wireshark/

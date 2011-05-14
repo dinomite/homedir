@@ -51,6 +51,9 @@ function build_prompt {
 
     # Change the titlebar in xterms
     echo -ne "\033]0;${HOSTNAME}:${PWD}\007"
+
+    # Write history after every command
+    history -a
 }
 PROMPT_COMMAND=build_prompt
 

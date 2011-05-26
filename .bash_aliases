@@ -89,6 +89,7 @@ alias gti='git'
 # A short git log
 alias gitl='git l -n3'
 alias gits='git st'
+alias gsrebase='git-svn-rebase'
 
 alias routes='netstat -nr -f inet'
 

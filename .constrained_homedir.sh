@@ -35,11 +35,11 @@ fi
 
 if [[ $WGET -ne 0 ]]
 then
-    DOWNLOADER='wget -q -O -'
+    DOWNLOADER='wget -nv -O -'
 else
     if [[ $CURL -ne 0 ]]
     then
-        DOWNLOADER='curl -s'
+        DOWNLOADER='curl -fsS'
     fi
 fi
 

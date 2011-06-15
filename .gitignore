@@ -9,6 +9,8 @@ Music
 Pictures
 Public
 Sites
+perl5
+public_html
 sandbox
 tmp
 .*.sw*
@@ -18,6 +20,8 @@ tmp
 .bash_history
 .bash_local
 .bzr.log
+.cache
+.certs
 .cpan
 .cpanm
 .crontab
@@ -26,6 +30,7 @@ tmp
 .eclipse_keyring
 .erlang.cookie
 .fontconfig
+.forward
 .gem
 .gnupg
 .irb_history
@@ -33,8 +38,12 @@ tmp
 .m2
 .mysql_history
 .org.eclipse.epp.usagedata.recording.userId
-.serverauth.2818
+.perlbrew
+.profile
+.rnd
+.spinner.pid
 .subversion_IDEA
+.sudo_as_admin_successful
 .svn
 .vim-fuf
 .vim-fuf-data

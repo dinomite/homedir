@@ -1,0 +1,32 @@
+[
+   {
+      "content" : "[{\"content\":\"Drew Stephens\",\"metadata\":{\"core\":{\"update_time\":\"2010-10-26T03:27:06Z\",\"resource\":\"metabase:user:e8b54720-e0b0-11df-b7f7-ee7534c65821\",\"creator\":\"metabase:user:e8b54720-e0b0-11df-b7f7-ee7534c65821\",\"guid\":\"e8b5937e-e0b0-11df-b7f7-ee7534c65821\",\"creation_time\":\"2010-10-26T03:27:06Z\",\"type\":\"Metabase-User-FullName\",\"schema_version\":1,\"valid\":1}}},{\"content\":\"drew@dinomite.net\",\"metadata\":{\"core\":{\"update_time\":\"2010-10-26T03:27:06Z\",\"resource\":\"metabase:user:e8b54720-e0b0-11df-b7f7-ee7534c65821\",\"creator\":\"metabase:user:e8b54720-e0b0-11df-b7f7-ee7534c65821\",\"guid\":\"e8b5a04e-e0b0-11df-b7f7-ee7534c65821\",\"creation_time\":\"2010-10-26T03:27:06Z\",\"type\":\"Metabase-User-EmailAddress\",\"schema_version\":1,\"valid\":1}}}]",
+      "metadata" : {
+         "core" : {
+            "update_time" : "2010-10-26T03:27:06Z",
+            "resource" : "metabase:user:e8b54720-e0b0-11df-b7f7-ee7534c65821",
+            "creator" : "metabase:user:e8b54720-e0b0-11df-b7f7-ee7534c65821",
+            "guid" : "e8b54720-e0b0-11df-b7f7-ee7534c65821",
+            "creation_time" : "2010-10-26T03:27:06Z",
+            "type" : "Metabase-User-Profile",
+            "schema_version" : 1,
+            "valid" : 1
+         }
+      }
+   },
+   {
+      "content" : "deRooph1om",
+      "metadata" : {
+         "core" : {
+            "update_time" : "2010-10-26T03:27:06Z",
+            "resource" : "metabase:user:e8b54720-e0b0-11df-b7f7-ee7534c65821",
+            "creator" : "metabase:user:e8b54720-e0b0-11df-b7f7-ee7534c65821",
+            "guid" : "e8b5b00c-e0b0-11df-b7f7-ee7534c65821",
+            "creation_time" : "2010-10-26T03:27:06Z",
+            "type" : "Metabase-User-Secret",
+            "schema_version" : 1,
+            "valid" : 1
+         }
+      }
+   }
+]

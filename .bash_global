@@ -25,12 +25,12 @@ PRODUCTION_HOSTS=( apb00 apb01 apb02 apb03 apw00 apw01 apw02 apw03 apd00 apd01 )
 for host in "${PRODUCTION_HOSTS[@]}"
 do
     if [ $HOSTNAME = "$host" ]; then
-        export HOST_COLOR="\[\033[1;34m\]"
+        export HOST_COLOR="\[\033[1;31m\]"
         break
     fi
 done
 if [ $HOSTNAME = 'svr-dev-rw1' ]; then
-    export HOST_COLOR="\[\033[1;31m\]"
+    export HOST_COLOR="\[\033[1;34m\]"
 fi
 
 # Color the colon red & capitalize hostname if root

@@ -23,6 +23,8 @@
     untracked = cyan
 [diff]
     ignoreSubmodules = untracked
+[grep]
+    extendedRegexp = true
 [rebase]
     autosquash = true
 [branch "master"]

@@ -14,7 +14,7 @@ HOSTNAME=`hostname|sed -e 's/\..*$//'`
 if [ $HOSTNAME = 'Titus' ] || [ $HOSTNAME = 'Titus.local' ] || [ $HOSTNAME = 'titus' ]; then
     export HOST_COLOR="\[\033[1;35m\]"
 fi
-if [ $HOSTNAME = 'claudius' ]; then
+if [ $HOSTNAME = 'caligula' ]; then
     export HOST_COLOR="\[\033[1;36m\]"
 fi
 if [ $HOSTNAME = 'Trajan' ]; then

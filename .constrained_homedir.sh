@@ -61,3 +61,6 @@ for file in "${SED_TRANSFORM_FILES[@]}"
 do
     sed -i'' -e "s#~/\.#~/$CONSTRAIN_HOMEDIR/.#" $file
 done
+
+# Add other aliases
+echo "alias vim='vim -u $CONSTRAIN_HOMEDIR/.vimrc.simple'" >> "$CONSTRAIN_HOMEDIR/.bash_aliases"

@@ -2,7 +2,7 @@
 CONSTRAIN_HOMEDIR=.drew
 # Root of the GitHub repository
 GITHUB_ROOT=https://raw.github.com/dinomite/homedir/master/
-GITHUB_FILES=( .bash_aliases .bash_functions .bash_global .bashrc )
+GITHUB_FILES=( .bash_aliases .bash_functions .bash_global .bashrc .vimrc.simple )
 # Files that need sed run on them to insert CONSTRAIN_HOMEDIR in paths they reference
 SED_TRANSFORM_FILES=( .bashrc )
 
@@ -56,7 +56,7 @@ do
     $DOWNLOADER "$GITHUB_ROOT/$file" > $file
 done
 
-# Run sed on files that need it
+# Run sed on files that need it, altering homedir-relative paths
 for file in "${SED_TRANSFORM_FILES[@]}"
 do
     sed -i'' -e "s#~/\.#~/$CONSTRAIN_HOMEDIR/.#" $file

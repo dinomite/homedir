@@ -63,4 +63,4 @@ do
 done
 
 # Add other aliases
-echo "alias vim='vim -u $CONSTRAIN_HOMEDIR/.vimrc.simple'" >> "$CONSTRAIN_HOMEDIR/.bash_aliases"
+echo "alias vim='vim -u ~/$CONSTRAIN_HOMEDIR/.vimrc.simple'" >> "~/$CONSTRAIN_HOMEDIR/.bash_aliases"

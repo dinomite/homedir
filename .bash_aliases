@@ -34,9 +34,7 @@ alias IGR="GRI"
 alias IRG="GRI"
 # Ack is too hard to type
 alias a="ack"
-# Better find
-alias findr='findr.sh'
-alias findra='findr.sh -a'
+alias shead="sort|uniq -c|sort -rn|head"
 
 # Find processes
 alias paux="ps aux|grep -i"

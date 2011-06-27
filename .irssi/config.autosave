@@ -80,7 +80,6 @@ chatnets = {
     max_kicks = "4";
     max_msgs = "3";
     max_whois = "2";
-    autosendcmd = "/msg nickserv identify jericho";
   };
 
   Debian = {
@@ -88,7 +87,6 @@ chatnets = {
     max_kicks = "4";
     max_msgs = "3";
     max_whois = "2";
-    autosendcmd = "/msg nickserv identify jericho;";
   };
 
   Perl = { type = "IRC"; max_kicks = "4"; max_msgs = "3"; max_whois = "2"; };
@@ -98,16 +96,14 @@ chatnets = {
     max_kicks = "4";
     max_msgs = "3";
     max_whois = "2";
-    autosendcmd = "/msg nickserv identify jericho;";
   };
 };
 
 channels = (
   { name = "#csh"; chatnet = "EFNet"; autojoin = "yes"; },
-  { name = "#archiveteam"; chatnet = "EFNet"; autojoin = "yes"; },
+  #  { name = "#archiveteam"; chatnet = "EFNet"; autojoin = "yes"; },
   { name = "#2600"; chatnet = "2600Net"; autojoin = "yes"; },
   { name = "#dc2600"; chatnet = "2600Net"; autojoin = "yes"; },
-  { name = "#ca2600"; chatnet = "2600Net"; autojoin = "yes"; },
   { name = "#debian"; chatnet = "Debian"; autojoin = "yes"; },
   { name = "#perl"; chatnet = "Perl"; autojoin = "yes"; }
 );

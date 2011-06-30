@@ -80,7 +80,7 @@ alias enscript='enscript -2Gr -E --color -C --mark-wrapped-lines=arrow'
 alias syncsvn='rsync -a --exclude=".svn*" --exclude=".*.swp" --exclude=".*.swo"'
 alias perldoc='PAGER="" perldoc'
 alias pd='perldoc'
-alias urldecode="perl -pe 's/%([0-9a-f]{2})/sprintf("%s", pack("H2",$1))/eig'"
+alias urldecode='perl -pe '"'"'s/%([0-9a-f]{2})/sprintf("%s", pack("H2",$1))/eig'"'"
 
 # Hide a bunch of crap in dig
 alias dig='dig +nocomments +noquestion +nocmd +nostats'

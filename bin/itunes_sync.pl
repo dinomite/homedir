@@ -65,7 +65,7 @@ $localDir = "/Users/$user/Music/iTunes" unless ($localDir ne '');
 
 # Why --whole-file?
 # --size-only because of metadata changes?
-my $rsyncOptions = "-a --progress --rsh=ssh --exclude='.DS_Store' --exclude='*.DS_Store'";
+my $rsyncOptions = "-a --delete --progress --rsh=ssh --exclude='.DS_Store' --exclude='*.DS_Store'";
 if ($bwLimit) {
     $rsyncOptions .= " --bwlimit $bwLimit";
 }

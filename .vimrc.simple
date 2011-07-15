@@ -102,7 +102,7 @@ inoremap # #
 autocmd FileType c,cpp,slang set cindent
 " Check for file changes (svn ci, etc.) periodically and on window & buffer
 " switches
-autocmd CursorHold * checktime
+"autocmd CursorHold * checktime
 autocmd WinEnter * checktime
 autocmd BufWinEnter * checktime
 

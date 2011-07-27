@@ -14,6 +14,19 @@ function fawk {
     eval $cmd
 }
 
+# Print a histogram, with setable unit size
+function histogram {
+    UNIT=$1
+    if [ -z "$UNIT" ]; then
+        UNIT="1";
+    fi
+
+    first="sort|uniq -c|awk '{printf(\"\n%s \", \$0); for (i =0; i<\$1; i=i+"
+    last=") {printf(\"#\")};}'; echo \"\""
+    cmd="${first}${UNIT}${last}"
+    eval $cmd
+}
+
 function calc {
     awk "BEGIN{ print $* }";
 }

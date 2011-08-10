@@ -8,3 +8,4 @@
 --ignore-dir=blib
 --ignore-dir=images
 --ignore-dir=nbproject
+--ignore-dir=.scratch

@@ -34,6 +34,10 @@ Local iTunes directory (default: /Users/<user>/Music/iTunes)
 
 Bandwidth limit
 
+=item B<-nopodcast>
+
+Don't copy the the podcasts/ directory
+
 =item B<-nolibrary>
 
 Don't copy the iTunes library file
@@ -46,12 +50,14 @@ my $help = 0;
 my $remoteDir = '';
 my $localDir = '';
 my $bwLimit = 0;
+my $noPodcast = 0;
 my $noLibrary = 0;
 
 GetOptions( 'help|h'    => \$help,
             'remote=s'  => \$remoteDir,
             'local=s'   => \$localDir,
             'bwlimit=i' => \$bwLimit,
+            'nopodcast' => \$noPodcast,
             'nolibrary' => \$noLibrary);
 pod2usage(1) if ($help);
 
@@ -66,12 +72,11 @@ $localDir = "/Users/$user/Music/iTunes" unless ($localDir ne '');
 # Why --whole-file?
 # --size-only because of metadata changes?
 my $rsyncOptions = "-a --delete --progress --rsh=ssh --exclude='.DS_Store' --exclude='*.DS_Store'";
-if ($bwLimit) {
-    $rsyncOptions .= " --bwlimit $bwLimit";
-}
+$rsyncOptions .= " --bwlimit $bwLimit" if ($bwLimit);
+$rsyncOptions .= " --exclude=Podcasts/***" if ($noPodcast);
 
 unless ($noLibrary) {
-    system("scp \"$user" . "@" . "$host:$remoteDir/iTunes\\ Library\" $localDir/");
+    system("scp \"$user" . "@" . "$host:$remoteDir/iTunes\\ Library.itl\" $localDir/");
 }
 
 # Album Artwork

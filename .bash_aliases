@@ -65,19 +65,13 @@ alias bcvissh="bcvi --wrap-ssh --"
 alias screen='TERM=screen screen'
 alias jobs="jobs -l"
 alias bwm-ng="bwm-ng -u bytes -T avg -i getifaddrs"
-alias xterm="xterm -bg black -fg white"
-alias mkisofs="mkisofs -r -R -J -l -f"
-alias svnst='svn st'
 alias svndiffvim='svn diff --diff-cmd ~/bin/svnvimdiff'
 alias nslookup="nslookup -sil"
-alias tether="ssh -D7070 -l root"
 alias wgetdir="wget -r -nH --no-parent"
 alias wgetmirror="wget --mirror -U Firefox/1.5 -p --html-extension --convert-links"
 # Print 2 columns, big header, landscape mode, code highlighting, color,
 # and use arrows to mark wrapped lines
 alias enscript='enscript -2Gr -E --color -C --mark-wrapped-lines=arrow'
-# rsync the files (but not metadata or vim tmp files) of an SVN checkout
-alias syncsvn='rsync -a --exclude=".svn*" --exclude=".*.swp" --exclude=".*.swo"'
 alias perldoc='PAGER="" perldoc'
 alias pd='perldoc'
 alias urldecode='perl -pe '"'"'s/%([0-9a-f]{2})/sprintf("%s", pack("H2",$1))/eig'"'"

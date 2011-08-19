@@ -47,9 +47,16 @@ alias man="man -a"
 alias c="clear"
 alias logout="clear; logout"
 
-# Debian package management
-alias searchy="apt-cache search"
-alias birth="aptitude install"
+# Searching for packages
+if [ $OS_TYPE = 'macos' ]; then
+    # I use homebrew
+    alias searchy="brew search"
+elif [ $OS_TYPE = 'freebsd' ]; then
+    alias searchy="whereis search"
+elif [ $OS_TYPE = 'linux' ]; then
+    # Let's just assume it's Debian for now
+    alias searchy="apt-cache search"
+fi
 
 alias which='type -a'
 alias h="history |grep"

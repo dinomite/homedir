@@ -78,17 +78,23 @@ fi
 export FIGNORE=".svn"
 bind 'set match-hidden-files off'
 
-# Different options for ls depending on system
+# Figure out what system we are on
 if [ `uname` = Darwin ]; then
-    # MacOS
-    export LS_OPTIONS='-G'
+    export OS_TYPE='macos'
+elif [ `uname` = FreeBSD ]; then
+    export OS_TYPE='freebsd'
 else
-    if [ `uname` = FreeBSD ]; then
-        export LS_OPTIONS='-G'
-    else
-        # Probably Linux with GNU utils
-        export LS_OPTIONS='--color=auto'
-    fi
+    export OS_TYPE='linux'
+fi
+
+# Different options for ls depending on system
+if [ $OS_TYPE = 'macos' ]; then
+    export LS_OPTIONS='-G'
+elif [ $OS_TYPE = 'freebsd' ]; then
+    export LS_OPTIONS='-G'
+elif [ $OS_TYPE = 'linux' ]; then
+    # Proably GNU utils
+    export LS_OPTIONS='--color=auto'
 fi
 
 # Make 'ls' output legible

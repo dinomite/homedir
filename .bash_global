@@ -13,11 +13,9 @@ MANPATH=$HOME/.software/man:/opt/local/man:/opt/local/share/man:$MANPATH
 HOSTNAME=`hostname|sed -e 's/\..*$//'`
 if [ $HOSTNAME = 'Titus' ] || [ $HOSTNAME = 'Titus.local' ] || [ $HOSTNAME = 'titus' ]; then
     export HOST_COLOR="\[\033[1;35m\]"
-fi
-if [ $HOSTNAME = 'caligula' ]; then
+elif [ $HOSTNAME = 'caligula' ]; then
     export HOST_COLOR="\[\033[1;36m\]"
-fi
-if [ $HOSTNAME = 'Trajan' ]; then
+elif [ $HOSTNAME = 'Trajan' ]; then
     export HOST_COLOR="\[\033[1;30m\]"
 fi
 

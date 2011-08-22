@@ -32,6 +32,5 @@
     merge = refs/heads/master
 [github]
     user = dinomite
-    token = 3421200be62a2de098a0059c2d67d705
 [blame]
     date = short

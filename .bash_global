@@ -58,8 +58,6 @@ function build_prompt {
 
     # Write history after every command
     history -a
-    # Read history
-    history -n
 }
 PROMPT_COMMAND=build_prompt
 

@@ -45,6 +45,7 @@ tmp
 .rnd
 .spinner.pid
 .subversion_IDEA
+.subversion/auth
 .sudo_as_admin_successful
 .svn
 .vim-fuf

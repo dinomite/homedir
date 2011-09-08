@@ -13,3 +13,6 @@
 [submodule ".ssh"]
 	path = .ssh
 	url = ssh://dinomite@dinomite.net/home/dinomite/git_repos/ssh
+[submodule ".gnupg"]
+	path = .gnupg
+	url = ssh://dinomite@dinomite.net/home/dinomite/git_repos/gnupg

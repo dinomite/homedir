@@ -7,12 +7,9 @@
 [submodule "bin/submodules/git-svn-clone-externals"]
 	path = bin/submodules/git-svn-clone-externals
 	url = git@github.com:dinomite/git-svn-clone-externals.git
-[submodule ".ssh"]
-	path = .ssh
-	url = ssh://dinomite@dinomite.net/home/dinomite/git_repos/ssh
-[submodule "gnupg"]
-	path = gnupg
-	url = ssh://dinomite@dinomite.net/home/dinomite/git_repos/gnupg
 [submodule "bin/submodules/git-tools"]
 	path = bin/submodules/git-tools
 	url = git@github.com:dinomite/git-tools.git
+[submodule ".ssh"]
+	path = .ssh
+	url = ssh://dinomite@dinomite.net/home/dinomite/git_repos/ssh

@@ -6,6 +6,8 @@
     ci = commit
     co = checkout
     br = branch
+    f = fetch -a
+    r = remote -v
     info = remote show origin
     wdiff = diff --no-ext-diff --color-words
     l = log --stat --format=format:'"%C(blue)%h %C(cyan)%an %C(blue)(%cn) %ai\n%Cgreen%s\n%b%N"'

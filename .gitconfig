@@ -6,7 +6,7 @@
     ci = commit
     co = checkout
     br = branch
-    f = fetch -a
+    f = fetch --all
     r = remote -v
     info = remote show origin
     wdiff = diff --no-ext-diff --color-words

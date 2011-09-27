@@ -8,6 +8,7 @@
     br = branch
     f = fetch --all
     r = remote -v
+    b = branch -a
     info = remote show origin
     wdiff = diff --no-ext-diff --color-words
     l = log --stat --format=format:'"%C(blue)%h %C(cyan)%an %C(blue)(%cn) %ai\n%Cgreen%s\n%b%N"'

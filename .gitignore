@@ -33,6 +33,7 @@ tmp
 .fontconfig
 .forward
 .gem
+.gradle
 .irb_history
 .lesshst
 .m2

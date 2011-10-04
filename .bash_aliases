@@ -123,3 +123,7 @@ alias scorn="ssh scorn.csh.rit.edu"
 alias jake="ssh jake.csh.rit.edu"
 alias hactar="ssh jake.csh.rit.edu"
 alias rancor="ssh rancor.csh.rit.edu"
+
+##### Clearspring #####
+# Completion for cssh (see ~/bin/cssh)
+complete -F _ssh cssh

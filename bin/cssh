@@ -1,0 +1,3 @@
+#!/bin/bash
+# Load my basic homedir when SSHing to Clearspring hosts
+ssh $1 -t "exec bash --rcfile .drew/.bashrc"

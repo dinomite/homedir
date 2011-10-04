@@ -34,9 +34,3 @@ function calc {
 function getip {
     host $1|grep " has address "|cut -d" " -f4
 }
-
-# Load my basic homedir when SSHing to Clearspring hosts
-function cssh {
-    ssh $1 -t "exec bash --rcfile .drew/.bashrc"
-}
-complete -F _ssh cssh

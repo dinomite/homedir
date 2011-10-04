@@ -1,0 +1,20 @@
+source $HOME/.screenrc
+
+sessionname prodconns
+
+screen -t 'apw00' cssh apw00
+screen -t 'apw01' cssh apw01
+screen -t 'apw02' cssh apw02
+
+screen -t 'apb00' cssh apb00
+screen -t 'apb01' cssh apb01
+screen -t 'apb02' cssh apb02
+
+select 0
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
+
+# Screensaver
+#idle 500 eval "screen cmatrix 10" "idle 0"

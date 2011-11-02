@@ -19,7 +19,7 @@ elif [ $HOSTNAME = 'Trajan' ]; then
     export HOST_COLOR="\[\033[1;30m\]"
 fi
 
-PRODUCTION_HOSTS=( apb00 apb01 apb02 apb03 apw00 apw01 apw02 apw03 apd00 apd01 )
+PRODUCTION_HOSTS=( apb00 apb01 apb02 apb03 apw00 apw01 apw02 apw03 apd00 apd01 lpw00 lsu06 lpb00 lpb01 )
 for host in "${PRODUCTION_HOSTS[@]}"
 do
     if [ $HOSTNAME = "$host" ]; then

@@ -2,15 +2,11 @@ source $HOME/.screenrc
 
 sessionname prodconns
 
-screen -t 'apw00' cssh apw00
-screen -t 'apw01' cssh apw01
-screen -t 'apw02' cssh apw02
+screen -t 'lpw00' cssh lpw00
+screen -t 'lsu06' cssh lsu06
 
-screen -t 'apb00' cssh apb00
-screen -t 'apb01' cssh apb01
-screen -t 'apb02' cssh apb02
-
-screen -t 'apd00' cssh apb02
+screen -t 'lpb00' cssh lpb00
+screen -t 'lpb01' cssh lpb01
 
 select 0
 

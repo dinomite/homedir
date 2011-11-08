@@ -36,10 +36,12 @@ tmp
 .gradle
 .irb_history
 .lesshst
+.local
 .m2
 .mysql_history
 .muzak
 .org.eclipse.epp.usagedata.recording.userId
+.pause
 .pip/pip.log
 .perlbrew
 .profile

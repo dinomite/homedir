@@ -2,7 +2,7 @@
 CONSTRAIN_HOMEDIR=.drew
 # Root of the GitHub repository
 GITHUB_ROOT=https://raw.github.com/dinomite/homedir/master/
-GITHUB_FILES=( .bash_aliases .bash_functions .bash_global .bashrc .vimrc.simple )
+GITHUB_FILES=( .bash_aliases .bash_functions .bash_global .bashrc .vimrc.simple .constrained_homedir.sh )
 # Files that need sed run on them to insert CONSTRAIN_HOMEDIR in paths they reference
 SED_TRANSFORM_FILES=( .bashrc )
 

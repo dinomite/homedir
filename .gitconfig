@@ -38,3 +38,5 @@
     user = dinomite
 [blame]
     date = short
+[core]
+	excludesfile = /Users/dinomite/.gitignore.global

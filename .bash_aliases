@@ -35,6 +35,7 @@ alias IRG="GRI"
 # Ack is too hard to type
 alias a="ack"
 alias shead="sort|uniq -c|sort -rn|head"
+alias t="tail -F"
 
 # Find processes
 alias paux="ps aux|grep -i"

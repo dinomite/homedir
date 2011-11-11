@@ -1,4 +1,5 @@
 # .bashrc
+source /etc/profile
 source ~/.bash_global
 source ~/.bash_aliases
 source ~/.bash_functions

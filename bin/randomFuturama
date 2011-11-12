@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use List::Util "shuffle";
 
-my $futuramaDir = '/Volumes/Colosseum/movies/TV/Futurama';
+my $futuramaDir = '/Volumes/Colosseum/Media/TV/Futurama';
 my $moviePlayer = '/usr/local/bin/mplayer';
 
 chdir $futuramaDir;

@@ -1,0 +1,8 @@
+source $HOME/.screenrc
+
+sessionname devmon
+
+screen -t 'devmon-gang' cssh devmon-gang
+screen -t 'devmon-graph' cssh devmon-graph
+
+select 0

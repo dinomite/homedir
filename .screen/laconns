@@ -9,10 +9,3 @@ screen -t 'lpb00' cssh lpb00
 screen -t 'lpb01' cssh lpb01
 
 select 0
-
-hardstatus on
-hardstatus alwayslastline
-hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
-
-# Screensaver
-#idle 500 eval "screen cmatrix 10" "idle 0"

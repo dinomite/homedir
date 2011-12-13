@@ -6,7 +6,7 @@ GITHUB_FILES=( .bash_aliases .bash_functions .bash_global .bashrc .vimrc.simple 
 # Files that need sed run on them to insert CONSTRAIN_HOMEDIR in paths they reference
 SED_TRANSFORM_FILES=( .bashrc .shell )
 # Files that should be made executable
-CHMOD_X_FILES=( .constrained_homedir .shell )
+CHMOD_X_FILES=( .constrained_homedir.sh .shell )
 
 # See: http://noobody.org/Data/PonychanImageCrawler.bash
 function depCheck()

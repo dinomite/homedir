@@ -65,3 +65,4 @@ done
 # Add other aliases
 echo "alias vim='vim -u ~/$CONSTRAIN_HOMEDIR/.vimrc.simple'" >> ~/$CONSTRAIN_HOMEDIR/.bash_aliases
 echo "alias screen='screen -c ~/.drew/.screenrc'" >> ~/$CONSTRAIN_HOMEDIR/.bash_aliases
+echo "shell bash --rcfile .drew/.bashrc" >> ~/$CONSTRAIN_HOMEDIR/.screenrc

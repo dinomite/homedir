@@ -2,9 +2,9 @@
 CONSTRAIN_HOMEDIR=.drew
 # Root of the GitHub repository
 GITHUB_ROOT=https://raw.github.com/dinomite/homedir/master/
-GITHUB_FILES=( .bash_aliases .bash_functions .bash_global .bashrc .vimrc.simple .constrained_homedir.sh .screenrc )
+GITHUB_FILES=( .bash_aliases .bash_functions .bash_global .bashrc .vimrc.simple .constrained_homedir.sh .screenrc .shell )
 # Files that need sed run on them to insert CONSTRAIN_HOMEDIR in paths they reference
-SED_TRANSFORM_FILES=( .bashrc )
+SED_TRANSFORM_FILES=( .bashrc .shell )
 
 # See: http://noobody.org/Data/PonychanImageCrawler.bash
 function depCheck()
@@ -65,4 +65,4 @@ done
 # Add other aliases
 echo "alias vim='vim -u ~/$CONSTRAIN_HOMEDIR/.vimrc.simple'" >> ~/$CONSTRAIN_HOMEDIR/.bash_aliases
 echo "alias screen='screen -c ~/.drew/.screenrc'" >> ~/$CONSTRAIN_HOMEDIR/.bash_aliases
-echo "shell bash --rcfile .drew/.bashrc" >> ~/$CONSTRAIN_HOMEDIR/.screenrc
+echo "shell $CONSTRAIN_HOMEDIR/.shell" >> ~/$CONSTRAIN_HOMEDIR/.screenrc

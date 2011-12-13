@@ -1,0 +1,21 @@
+source $HOME/.screenrc
+
+sessionname pixelator
+
+screen -t 'apw00' cssh apw00
+screen -t 'aab20' cssh aab20
+screen -t 'aab21' cssh aab21
+screen -t 'aab22' cssh aab22
+screen -t 'aab23' cssh aab23
+screen -t 'aab24' cssh aab24
+screen -t 'aab25' cssh aab25
+screen -t 'aab26' cssh aab26
+screen -t 'aab27' cssh aab27
+screen -t 'aab28' cssh aab28
+screen -t 'aab29' cssh aab29
+screen -t 'aab2a' cssh aab2a
+screen -t 'aab2b' cssh aab2b
+screen -t 'aab2c' cssh aab2c
+screen -t 'aab2d' cssh aab2d
+
+select 0

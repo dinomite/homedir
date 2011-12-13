@@ -2,20 +2,19 @@ source $HOME/.screenrc
 
 sessionname pixelator
 
-screen -t 'apw00' cssh apw00
-screen -t 'aab20' cssh aab20
-screen -t 'aab21' cssh aab21
-screen -t 'aab22' cssh aab22
-screen -t 'aab23' cssh aab23
-screen -t 'aab24' cssh aab24
-screen -t 'aab25' cssh aab25
-screen -t 'aab26' cssh aab26
-screen -t 'aab27' cssh aab27
-screen -t 'aab28' cssh aab28
-screen -t 'aab29' cssh aab29
-screen -t 'aab2a' cssh aab2a
-screen -t 'aab2b' cssh aab2b
-screen -t 'aab2c' cssh aab2c
-screen -t 'aab2d' cssh aab2d
+screen -t 'aab20' ssh aab20
+screen -t 'aab21' ssh aab21
+screen -t 'aab22' ssh aab22
+screen -t 'aab23' ssh aab23
+screen -t 'aab24' ssh aab24
+screen -t 'aab25' ssh aab25
+screen -t 'aab26' ssh aab26
+screen -t 'aab27' ssh aab27
+screen -t 'aab28' ssh aab28
+screen -t 'aab29' ssh aab29
+screen -t 'aab2a' ssh aab2a
+screen -t 'aab2b' ssh aab2b
+screen -t 'aab2c' ssh aab2c
+screen -t 'aab2d' ssh aab2d
 
 select 0

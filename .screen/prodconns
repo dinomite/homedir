@@ -9,6 +9,7 @@ screen -t 'apw02' cssh apw02
 screen -t 'apb00' cssh apb00
 screen -t 'apb01' cssh apb01
 screen -t 'apb02' cssh apb02
+screen -t 'apb03' cssh apb03
 
 screen -t 'apd00' cssh apb02
 

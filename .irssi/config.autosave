@@ -13,7 +13,7 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
-    autoconnect = "yes";
+    autoconnect = "no";
   },
   {
     address = "irc.debian.org";
@@ -21,7 +21,7 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
-    autoconnect = "yes";
+    autoconnect = "no";
   },
   {
     address = "irc.perl.org";
@@ -29,7 +29,7 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
-    autoconnect = "yes";
+    autoconnect = "no";
   },
   {
     address = "chat.us.freenode.net";
@@ -50,8 +50,9 @@ settings = {
   "fe-common/core" = {
     use_status_window = "yes";
     autocreate_windows = "yes";
-    autocreate_query_level = "none";
-    autoclose_windows = "no";
+    autocreate_own_query = "yes";
+    autocreate_query_level = "msgs";
+    autoclose_windows = "yes";
     reuse_unused_windows = "no";
   };
   proxy = {
@@ -82,7 +83,7 @@ chatnets = {
     max_whois = "2";
   };
 
-  Debian = {
+  Debian = { 
     type = "IRC";
     max_kicks = "4";
     max_msgs = "3";
@@ -101,11 +102,12 @@ chatnets = {
 
 channels = (
   { name = "#csh"; chatnet = "EFNet"; autojoin = "yes"; },
+  { name = "#lemons"; chatnet = "Freenode"; autojoin = "yes"; },
   #  { name = "#archiveteam"; chatnet = "EFNet"; autojoin = "yes"; },
-  { name = "#2600"; chatnet = "2600Net"; autojoin = "yes"; },
-  { name = "#dc2600"; chatnet = "2600Net"; autojoin = "yes"; },
-  { name = "#debian"; chatnet = "Debian"; autojoin = "yes"; },
-  { name = "#perl"; chatnet = "Perl"; autojoin = "yes"; }
+  #  { name = "#2600"; chatnet = "2600Net"; autojoin = "yes"; },
+  #  { name = "#dc2600"; chatnet = "2600Net"; autojoin = "yes"; },
+  #  { name = "#debian"; chatnet = "Debian"; autojoin = "yes"; },
+  #  { name = "#perl"; chatnet = "Perl"; autojoin = "yes"; }
 );
 
 aliases = {

@@ -92,6 +92,7 @@ alias gti='git'
 # A short git log
 alias gitl='git l -n3'
 alias gits='git st'
+alias gitd='git diff'
 alias gitr='git r'
 alias gitf='git f'
 alias gitb='git branch'

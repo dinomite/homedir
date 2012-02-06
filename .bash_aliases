@@ -9,6 +9,7 @@ alias la="ls -la"
 alias sl="ls"
 alias l="ls"
 alias s="ls"
+alias ld="ls -d"
 #alias rm="rm -i"    # Make rming a slow and painful process
 # Show most recent files at the bottom
 alias ltr="ls -ltr"
@@ -34,6 +35,7 @@ alias IGR="GRI"
 alias IRG="GRI"
 # Ack is too hard to type
 alias a="ack"
+alias avg="ack --invert-file-match -G"
 alias shead="sort|uniq -c|sort -rn|head"
 alias t="tail -F"
 

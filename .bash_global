@@ -97,6 +97,7 @@ fi
 # Different options for ls depending on system
 if [ $OS_TYPE = 'macos' ]; then
     export LS_OPTIONS='-G'
+    export PYTHONPATH="$PYTHONPATH:/Library/Python/2.7/site-packages/"
 elif [ $OS_TYPE = 'freebsd' ]; then
     export LS_OPTIONS='-G'
 elif [ $OS_TYPE = 'linux' ]; then

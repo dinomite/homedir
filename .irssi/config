@@ -42,11 +42,7 @@ servers = (
 );
 
 settings = {
-  core = { 
-    real_name = "Drew";
-    user_name = "dinomite";
-    nick = "dinomite";
-  };
+  core = { real_name = "Drew"; user_name = "drew"; nick = "drew"; };
   "fe-common/core" = {
     use_status_window = "yes";
     autocreate_windows = "yes";

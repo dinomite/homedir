@@ -116,6 +116,8 @@ export CC='gcc'
 # Make perl localization work
 export LC_ALL="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
+# Give Maven more memory
+export MAVEN_OPTS=-Xmx1024m
 
 ### Capture more history
 #"I know I've used that command before, but I can't remember the syntax"

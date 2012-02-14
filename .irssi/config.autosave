@@ -38,15 +38,19 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
+  },
+  {
+    address = "irc.clearspring.com";
+    chatnet = "Clearspring";
+    port = "6668";
+    use_ssl = "yes";
+    ssl_verify = "no";
+    autoconnect = "no";
   }
 );
 
 settings = {
-  core = { 
-    real_name = "Drew";
-    user_name = "dinomite";
-    nick = "dinomite";
-  };
+  core = { real_name = "Drew"; user_name = "drew"; nick = "drew"; };
   "fe-common/core" = {
     use_status_window = "yes";
     autocreate_windows = "yes";
@@ -98,6 +102,7 @@ chatnets = {
     max_msgs = "3";
     max_whois = "2";
   };
+  Clearspring = { type = "IRC"; };
 };
 
 channels = (

@@ -29,6 +29,11 @@
     untracked = cyan
 [diff]
     ignoreSubmodules = untracked
+    tool = mvimdiff
+[difftool]
+    prompt = false
+[difftool "mvimdiff"]
+    cmd = mvim -d -f $LOCAL $REMOTE
 [grep]
     extendedRegexp = true
 [rebase]

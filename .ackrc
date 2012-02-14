@@ -1,4 +1,5 @@
 --smart-case
+--type-set=js=.js,.json
 --ignore-dir=css
 --ignore-dir=external
 --ignore-dir=experimental

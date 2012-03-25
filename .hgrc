@@ -1,0 +1,15 @@
+[ui]
+username = Drew Stephens <drew@dinomite.net>
+editor = vim
+
+[extensions]
+color =
+progress =
+pager =
+rebase =
+
+[alias]
+pull = pull --rebase
+show = log --color=always -pr
+slog = log --style=~/.hg_files/map-cmdline.slog
+nlog = log --style=~/.hg_files/map-cmdline.nlog

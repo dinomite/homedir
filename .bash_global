@@ -109,7 +109,7 @@ fi
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 ### Standard variables
-export PAGER='less'
+export PAGER='less -R'
 export EDITOR='vim'
 export BROWSER='firefox'
 export CC='gcc'

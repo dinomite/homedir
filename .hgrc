@@ -13,3 +13,11 @@ pull = pull --rebase
 show = log --color=always -pr
 slog = log --style=~/.hg_files/map-cmdline.slog
 nlog = log --style=~/.hg_files/map-cmdline.nlog
+
+[color]
+status.modified = magenta bold
+status.added = green bold
+status.removed = red bold
+status.deleted = cyan bold
+status.unknown = bold
+status.ignored = bold

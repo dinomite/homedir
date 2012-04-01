@@ -9,6 +9,8 @@ pager =
 rebase =
 
 [alias]
+st = status
+ci = commit
 pull = pull --rebase
 show = log --color=always -pr
 slog = log --style=~/.hg_files/map-cmdline.slog

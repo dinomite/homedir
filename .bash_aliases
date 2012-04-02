@@ -78,7 +78,7 @@ alias bwm-ng="bwm-ng -u bytes -T avg -i getifaddrs"
 alias svndiffvim='svn diff --diff-cmd ~/bin/svnvimdiff'
 alias nslookup="nslookup -sil"
 alias wgetdir="wget -r -nH --no-parent"
-alias wgetmirror="wget --mirror -U Firefox/1.5 -p --html-extension --convert-links"
+alias wgetmirror="wget --mirror -U Firefox/11.0 -p --adjust-extension --convert-links"
 # Print 2 columns, big header, landscape mode, code highlighting, color,
 # and use arrows to mark wrapped lines
 alias enscript='enscript -2Gr -E --color -C --mark-wrapped-lines=arrow'

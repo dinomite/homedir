@@ -4,6 +4,15 @@ SSHFS_OPTIONS="-o follow_symlinks"
 SMBMOUNT="/sbin/mount"
 SMBMOUNT_OPTIONS="-t smbfs -o user,username=dstephens"
 
+ENCFS="encfs"
+
+if mount | grep "/Users/dinomite/clear" > /dev/null; then
+    echo "EncFS is already mounted."
+else
+    echo "mounting EncFS..."
+    $ENCFS $HOME/Dropbox/encrypted $HOME/clear
+fi
+
 ###if grep "^//genfiles/users/dstephens" /proc/mounts > /dev/null; then
 ###    echo "genfiles is already mounted."
 ###else
@@ -32,12 +41,12 @@ SMBMOUNT_OPTIONS="-t smbfs -o user,username=dstephens"
 ###    $SSHFS $SSHFS_OPTIONS dev1:/home/dstephens /Users/dstephens/dev1/
 ###fi
 
-if mount | grep "^titus" > /dev/null; then
-    echo "titus is already mounted."
-else
-    echo "mounting titus..."
-    $SSHFS $SSHFS_OPTIONS titus:/Users/dinomite /Users/drew/titus/
-fi
+###if mount | grep "^titus" > /dev/null; then
+###    echo "titus is already mounted."
+###else
+###    echo "mounting titus..."
+###    $SSHFS $SSHFS_OPTIONS titus:/Users/dinomite /Users/drew/titus/
+###fi
 
 ###if grep "^claudius" /proc/mounts > /dev/null; then
 ###    echo "claudius is already mounted."

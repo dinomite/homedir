@@ -119,6 +119,9 @@ export LANGUAGE="en_US.UTF-8"
 # Give Maven more memory
 export MAVEN_OPTS=-Xmx1024m
 
+# Make Ruby gems install to /usr/local
+export GEM_HOME=/usr/local
+
 ### Capture more history
 #"I know I've used that command before, but I can't remember the syntax"
 export HISTFILESIZE=500000

@@ -112,6 +112,8 @@ alias gcc='cowsay "gcc"; gcc'
 alias g++='cowsay "g++"; g++'
 alias make='cowsay "make"; nice -n 10 make'
 alias javac='cowsay "javac"; javac'
+# Java with remote debugging enabled
+alias jdebug='java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005'
 
 ###########################
 ##### Remote Machines #####

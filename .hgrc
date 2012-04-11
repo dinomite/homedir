@@ -7,6 +7,14 @@ color =
 progress =
 pager =
 rebase =
+hgext.rebase=
+hgext.hgk=
+hgext.graphlog=
+hgext.extdiff=
+hgext.hgshelve=
+mq=
+color=
+purge=
 
 [alias]
 st = status

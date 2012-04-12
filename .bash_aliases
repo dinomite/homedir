@@ -102,6 +102,7 @@ alias gsrebase='git-svn-rebase'
 
 alias gh='hg'
 alias hgs='hg st'
+alias hgd='hg diff'
 alias hgl='hg l -l5'
 alias hgn='hg n -l5'
 

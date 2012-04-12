@@ -103,6 +103,7 @@ alias gsrebase='git-svn-rebase'
 alias gh='hg'
 alias hgs='hg st'
 alias hgl='hg l -l5'
+alias hgn='hg n -l5'
 
 alias routes='netstat -nr -f inet'
 

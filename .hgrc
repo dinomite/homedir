@@ -21,9 +21,9 @@ st = status
 ci = commit
 pull = pull --rebase
 show = log --color=always -pr
-slog = log --style ~/.hg_files/map-cmdline.slog
-nlog = log --style ~/.hg_files/map-cmdline.nlog
-l = slog
+slog = log --style ~/.hg_files/map-cmdline.slog --pager=yes
+nlog = log --style ~/.hg_files/map-cmdline.nlog --pager=yes
+l = log --style ~/.hg_files/map-cmdline.slog
 
 [color]
 status.modified = magenta bold

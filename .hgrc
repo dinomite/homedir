@@ -24,7 +24,7 @@ show = log --color=always -pr
 slog = log --style ~/.hg_files/map-cmdline.slog --pager=yes
 l = log --style ~/.hg_files/map-cmdline.slog
 nlog = log --style ~/.hg_files/map-cmdline.nlog --pager=yes
-n = log --style ~/.hg_files/map-cmdline.nlog
+n = nlog
 
 [color]
 status.modified = magenta bold

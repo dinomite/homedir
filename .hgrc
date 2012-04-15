@@ -7,15 +7,24 @@ color =
 progress =
 pager =
 rebase =
+hgext.rebase=
+hgext.hgk=
+hgext.graphlog=
+hgext.extdiff=
+hgext.hgshelve=
+mq=
+color=
+purge=
 
 [alias]
 st = status
 ci = commit
 pull = pull --rebase
 show = log --color=always -pr
-slog = log --style ~/.hg_files/map-cmdline.slog
-nlog = log --style ~/.hg_files/map-cmdline.nlog
-l = slog
+slog = log --style ~/.hg_files/map-cmdline.slog --pager=yes
+l = log --style ~/.hg_files/map-cmdline.slog
+nlog = log --style ~/.hg_files/map-cmdline.nlog --pager=yes
+n = nlog
 
 [color]
 status.modified = magenta bold

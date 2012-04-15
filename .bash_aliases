@@ -101,7 +101,10 @@ alias gitb='git branch'
 alias gsrebase='git-svn-rebase'
 
 alias gh='hg'
-alias hgl='hg l -l3'
+alias hgs='hg st'
+alias hgd='hg diff'
+alias hgl='hg l -l5'
+alias hgn='hg n -l5'
 
 alias routes='netstat -nr -f inet'
 

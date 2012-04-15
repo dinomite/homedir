@@ -46,6 +46,7 @@ tmp
 .perlbrew
 .profile
 .rnd
+.rvm
 .spinner.pid
 .subversion_IDEA
 .subversion/auth

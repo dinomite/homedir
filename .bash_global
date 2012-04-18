@@ -81,6 +81,9 @@ if [ -e /usr/local/bin/brew ]; then
     fi
 fi
 
+# Prefer symlinks in Autojump
+export AUTOJUMP_KEEP_SYMLINKS=1
+
 # Ignore .svn directories when completing
 export FIGNORE=".svn"
 bind 'set match-hidden-files off'

@@ -21,15 +21,12 @@ st = status
 ci = commit
 pull = pull --rebase
 show = log --color=always -pr
-slog = log --style ~/.hg_files/map-cmdline.slog --pager=yes
-l = log --style ~/.hg_files/map-cmdline.slog
+l = log --style ~/.hg_files/map-cmdline.nlog
 nlog = log --style ~/.hg_files/map-cmdline.nlog --pager=yes
-n = nlog
 
 [color]
-status.modified = magenta bold
-status.added = green bold
-status.removed = red bold
-status.deleted = cyan bold
-status.unknown = bold
-status.ignored = bold
+status.added = green
+status.modified = yellow
+status.removed = red
+status.deleted = cyan
+status.unknown = cyan

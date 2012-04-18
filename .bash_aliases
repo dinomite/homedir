@@ -91,7 +91,6 @@ alias sharethisdir="echo 'now sharing cur directory at port 9000'; python -m Sim
 alias dig='dig +nocomments +noquestion +nocmd +nostats'
 
 alias gti='git'
-# A short git log
 alias gitl='git l -n3'
 alias gits='git st'
 alias gitd='git diff'
@@ -101,10 +100,9 @@ alias gitb='git branch'
 alias gsrebase='git-svn-rebase'
 
 alias gh='hg'
+alias hgl='hg l -l3'
 alias hgs='hg st'
 alias hgd='hg diff'
-alias hgl='hg l -l5'
-alias hgn='hg n -l5'
 
 alias routes='netstat -nr -f inet'
 

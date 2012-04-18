@@ -100,7 +100,7 @@ alias gitb='git branch'
 alias gsrebase='git-svn-rebase'
 
 alias gh='hg'
-alias hgl='hg l -l3'
+alias hgl='hg lnp -l3'
 alias hgs='hg st'
 alias hgd='hg diff'
 

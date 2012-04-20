@@ -1,4 +1,5 @@
 Applications
+Box\ Documents
 Desktop
 Documents
 Downloads
@@ -46,6 +47,7 @@ tmp
 .perlbrew
 .profile
 .rnd
+.rvm
 .spinner.pid
 .subversion_IDEA
 .subversion/auth

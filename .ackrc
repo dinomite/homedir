@@ -12,3 +12,4 @@
 --ignore-dir=nbproject
 --ignore-dir=.scratch
 --ignore-dir=.idea
+--ignore-dir=three20

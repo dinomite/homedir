@@ -1,5 +1,5 @@
 ### Paths
-PATH=.:$HOME/bin:/usr/games:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/games/bin:/opt/local/bin:/usr/lib/mpich/bin:/usr/local/mysql/bin:/opt/cxoffice/bin:/opt/CollabNet_Subversion/bin:$PATH
+PATH=.:$HOME/bin:/usr/games:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/games/bin:/opt/local/bin:/usr/lib/mpich/bin:/usr/local/mysql/bin:/opt/cxoffice/bin:/opt/CollabNet_Subversion/bin:$HOME/.rvm/bin:$PATH
 MANPATH=$HOME/.software/man:/opt/local/man:/opt/local/share/man:$MANPATH
 
 ### Prompt variable

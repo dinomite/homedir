@@ -92,7 +92,6 @@ alias ytrip="youtube-dl --max-quality 22 --output '%(uploader) - %(stitle).%(ext
 alias dig='dig +nocomments +noquestion +nocmd +nostats'
 
 alias gti='git'
-# A short git log
 alias gitl='git l -n3'
 alias gits='git st'
 alias gitd='git diff'
@@ -102,7 +101,9 @@ alias gitb='git branch'
 alias gsrebase='git-svn-rebase'
 
 alias gh='hg'
-alias hgl='hg l -l3'
+alias hgl='hg lnp -l3'
+alias hgs='hg st'
+alias hgd='hg diff'
 
 alias routes='netstat -nr -f inet'
 

@@ -11,7 +11,7 @@ hgext.rebase=
 hgext.hgk=
 hgext.graphlog=
 hgext.extdiff=
-hgext.hgshelve=
+hgext.hgshelve=~/.hgext/shelve.py
 mq=
 color=
 purge=
@@ -21,8 +21,8 @@ st = status
 ci = commit
 pull = pull --rebase
 show = log --color=always -pr
-l = log --style ~/.hg_files/map-cmdline.nlog --pager=yes
-lnp = log --style ~/.hg_files/map-cmdline.nlog
+l = log --style ~/.hgext/log.template --pager=yes
+lnp = log --style ~/.hgext/log.template
 
 [color]
 status.added = green

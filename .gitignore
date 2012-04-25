@@ -16,7 +16,6 @@ public_html
 sandbox
 tmp
 .*.sw*
-.*.pyc
 .DS_Store
 .Trash
 .Xauthority
@@ -36,6 +35,7 @@ tmp
 .forward
 .gem
 .gradle
+.hgext/hgshelve.pyc
 .irb_history
 .lesshst
 .local

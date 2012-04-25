@@ -1,6 +1,6 @@
 [user]
-    name = Drew Stephens
-    email = drew@dinomite.net
+	name = Drew Stephens
+	email = drew@dinomite.net
 [alias]
     st = status -s -b
     ci = commit
@@ -45,10 +45,10 @@
 [blame]
     date = short
 [core]
-    excludesfile = /Users/dinomite/.gitignore.global
+	excludesfile = /Users/dinomite/.gitignore.global
 [difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path = 
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

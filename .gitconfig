@@ -46,6 +46,7 @@
     date = short
 [core]
 	excludesfile = /Users/dinomite/.gitignore.global
+	quotepath = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

@@ -86,7 +86,7 @@ alias perldoc='PAGER="" perldoc'
 alias pd='perldoc'
 alias urldecode='perl -pe '"'"'s/%([0-9a-f]{2})/sprintf("%s", pack("H2",$1))/eig'"'"
 alias sharethisdir="echo 'now sharing cur directory at port 9000'; python -m SimpleHTTPServer 9000"
-alias ytrip="youtube-dl --max-quality 22 --output '%(uploader) - %(stitle).%(ext)'"
+alias ytrip="youtube-dl --max-quality 22 --output '%(uploader)s - %(stitle)s.%(ext)s'"
 
 # Hide a bunch of crap in dig
 alias dig='dig +nocomments +noquestion +nocmd +nostats'

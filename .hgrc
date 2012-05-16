@@ -22,8 +22,8 @@ st = status
 ci = commit
 pull = pull --rebase
 show = log --color=always -pr
-l = log --style ~/.hgext/log.template --pager=yes
-lnp = log --style ~/.hgext/log.template
+l = log --style ~/.hgext/log.template --pager=yes -b .
+lnp = log --style ~/.hgext/log.template -b .
 
 [color]
 status.added = green

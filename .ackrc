@@ -13,3 +13,4 @@
 --ignore-dir=.scratch
 --ignore-dir=.idea
 --ignore-dir=three20
+--ignore-dir=surefire-reports

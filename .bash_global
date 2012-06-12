@@ -61,6 +61,9 @@ function build_prompt {
 }
 PROMPT_COMMAND=build_prompt
 
+# Prefer symlinks in Autojump
+export AUTOJUMP_KEEP_SYMLINKS=1
+
 # System installed extensions
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
@@ -80,9 +83,6 @@ if [ -e /usr/local/bin/brew ]; then
         . `brew --prefix`/etc/autojump.bash
     fi
 fi
-
-# Prefer symlinks in Autojump
-export AUTOJUMP_KEEP_SYMLINKS=1
 
 # Ignore .svn directories when completing
 export FIGNORE=".svn"

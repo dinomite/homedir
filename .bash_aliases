@@ -12,7 +12,7 @@ alias s="ls"
 alias ld="ls -d"
 #alias rm="rm -i"    # Make rming a slow and painful process
 # Show most recent files at the bottom
-alias ltr="ls -ltr|tail"
+alias ltr="ls -ltr"
 
 # Why doesn't everyone have these?
 alias ..="cd .."

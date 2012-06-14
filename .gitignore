@@ -63,6 +63,7 @@ tmp
 .profile
 .rnd
 .rvm
+.s3cfg
 .spinner.pid
 .subversion_IDEA
 .subversion/auth

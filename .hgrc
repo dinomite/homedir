@@ -1,7 +1,7 @@
 [ui]
 username = Drew Stephens <drew@dinomite.net>
 editor = vim
-quiet = true
+#quiet = true
 
 [extensions]
 color =

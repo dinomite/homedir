@@ -47,6 +47,7 @@ tmp
 .gradle
 .hgext/attic.pyc
 .irb_history
+.irb-history
 .keepassx
 .lesshst
 .local

@@ -14,3 +14,5 @@
 --ignore-dir=.idea
 --ignore-dir=three20
 --ignore-dir=surefire-reports
+--ignore-dir=ext-4.1
+--ignore-dir=3rdparty

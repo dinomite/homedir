@@ -45,6 +45,7 @@ tmp
 .forward
 .gem
 .gradle
+.heroku
 .hgext/attic.pyc
 .irb_history
 .irb-history

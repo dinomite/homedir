@@ -48,6 +48,7 @@ tmp
 .hgext/attic.pyc
 .irb_history
 .irb-history
+.irssi/fnotify
 .keepassx
 .lesshst
 .local
@@ -62,6 +63,7 @@ tmp
 .pip/pip.log
 .perlbrew
 .profile
+.psql_history
 .rnd
 .rvm
 .s3cfg

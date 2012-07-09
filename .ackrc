@@ -11,8 +11,13 @@
 --ignore-dir=images
 --ignore-dir=nbproject
 --ignore-dir=.scratch
+--ignore-dir=.svn
 --ignore-dir=.idea
 --ignore-dir=three20
 --ignore-dir=surefire-reports
 --ignore-dir=ext-4.1
 --ignore-dir=3rdparty
+--ignore-dir=jQuery
+--ignore-dir=sencha-touch-1.1.1
+--ignore-dir=jasmine-1.1.0
+--ignore-dir=jasmine-1.2.0

@@ -21,3 +21,4 @@
 --ignore-dir=sencha-touch-1.1.1
 --ignore-dir=jasmine-1.1.0
 --ignore-dir=jasmine-1.2.0
+--ignore-dir=target

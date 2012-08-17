@@ -44,6 +44,10 @@ tmp
 .eclipse_keyring
 .erlang.cookie
 .fontconfig
+.fonts/encodings.dir
+.fonts/fonts.dir
+.fonts/fonts.list
+.fonts/fonts.scale
 .forward
 .gem
 .gradle

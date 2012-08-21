@@ -34,6 +34,7 @@ tmp
 .bzr.log
 .cache
 .certs
+.chef
 .config/Nokia
 .cpan
 .cpanm

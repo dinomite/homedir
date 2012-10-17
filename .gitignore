@@ -28,6 +28,7 @@ tmp
 .android/default.keyset
 .android/modem-nv-ram-5554
 .android/repositories.cfg
+.appcfg*
 .aptitude
 .bash_history
 .bash_local

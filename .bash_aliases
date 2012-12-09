@@ -23,8 +23,8 @@ alias ......="cd ../../../../.."
 alias .......="cd ../../../../../.."
 
 # Always use extended regex
-alias grep="egrep"
-alias cgrep="egrep --color=always"
+#alias grep="egrep"
+#alias cgrep="egrep --color=always"
 # Grep with line numbers and colors
 alias G="grep -n --color=always --binary-file=without-match --exclude=tags --exclude=*-min.js --exclude-dir='.[a-zA-Z]*' --exclude-dir='external' --exclude-dir='blib'"
 # Add recursive & insensitive matching

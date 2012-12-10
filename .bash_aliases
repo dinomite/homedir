@@ -123,7 +123,7 @@ alias jdebug='java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,addr
 ###########################
 alias claudius="ssh dinomite@dinomite.net"
 alias caligula="mosh dinomite@caligula.dinomite.net"
-alias titus="mosh dinomite@titus.dinomite.net"
+alias titus="ssh dinomite@titus.dinomite.net"
 alias congresslaw="ssh dinomite@congresslaw.net"
 
 ##### CSH #####

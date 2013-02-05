@@ -1,6 +1,6 @@
 [user]
-    name = Drew Stephens
-    email = drew@dinomite.net
+	name = Drew Stephens
+	email = drew@dinomite.net
 [log]
     date = relative
 [alias]
@@ -9,6 +9,7 @@
     ci = commit
     co = checkout
     br = branch
+    pb = push -u origin
     f = fetch --all
     pull = pull --rebase
     r = remote -v
@@ -49,8 +50,8 @@
     date = short
 [core]
     excludesfile = /Users/dinomite/.gitignore.global
-    quotepath = false
+	quotepath = false
 [branch]
     autosetuprebase = always
 [push]
-    default = matching
+    default = current

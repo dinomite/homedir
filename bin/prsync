@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# weird var order allows multiple local paths easily.
+usage="usage: $0 gateway_user gateway_host internal_user internal_host:path local_paths..."
+
+if [[ "$#" -lt '5' ]] ; then
+    echo "$usage" >&2
+    exit 1
+fi
+
+gateway_user=$1; shift
+gateway_host=$1; shift
+internal_user=$1; shift
+internal_host_and_path=$1; shift
+
+rsync -av --delete -e "ssh -Snone -o ProxyCommand='ssh -Snone -W %h:%p -l $gateway_user $gateway_host' -l $internal_user" $@ $internal_host_and_path

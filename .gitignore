@@ -41,6 +41,8 @@ tmp
 .dropbox-dist
 .eclipse_keyring
 .erlang.cookie
+.config/fish/fish_history
+.config/fish/fishd.*
 .fontconfig
 .fonts/encodings.dir
 .fonts/fonts.dir

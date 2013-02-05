@@ -4,6 +4,7 @@
 [log]
     date = relative
 [alias]
+    tag = tag -a
     st = status -s -b
     sl = stash list
     ci = commit

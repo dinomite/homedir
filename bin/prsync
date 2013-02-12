@@ -13,4 +13,4 @@ gateway_host=$1; shift
 internal_user=$1; shift
 internal_host_and_path=$1; shift
 
-rsync -av --delete -e "ssh -Snone -o ProxyCommand='ssh -Snone -W %h:%p -l $gateway_user $gateway_host' -l $internal_user" $@ $internal_host_and_path
+rsync -av --delete -e "ssh -Snone -o ControlMaster=no -o ProxyCommand='ssh -o ControlMaster=no -A -Snone -W %h:%p -l $gateway_user $gateway_host' -l $internal_user" $@ $internal_host_and_path

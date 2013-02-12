@@ -17,8 +17,8 @@
     b = branch -a
     info = remote show origin
     wdiff = diff --no-ext-diff --color-words
-    l = log --stat --format=format:'"%C(yellow)%h %C(cyan)%an %C(blue)(%cn) %C(cyan)%ad\n%C(green)%s\n%b%N"'
-    ll = log --stat --format=format:'"%C(yellow)%h %C(cyan)%an <%ae> %ad\n\t%C(blue)%cn <%ce> %ci\n%C(green)%s\n%b%N"'
+    l = log --stat --format=format:'"%C(yellow)%h %C(cyan)%an %C(blue)(%cn) %C(cyan)%ad%d\n%C(green)%s\n%b%N"'
+    ll = log --stat --format=format:'"%C(yellow)%h %C(cyan)%an <%ae> %ad%d\n\t%C(blue)%cn <%ce> %ci\n%C(green)%s\n%b%N"'
     ahead = log --stat --format=format:'"%C(yellow)%h %C(cyan)%an %C(blue)(%cn) %ad\n%C(green)%s\n%b%N"' origin/master..HEAD
     behind = log --stat --format=format:'"%C(yellow)%h %C(cyan)%an %C(blue)(%cn) %ad\n%C(green)%s\n%b%N"' HEAD..origin/master
     hist = log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset (%Cgreen%cr%Creset) %s [%Cblue%an%Creset]' --graph --abbrev-commit --date=relative

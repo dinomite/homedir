@@ -89,7 +89,7 @@ alias sharethisdir="echo 'now sharing cur directory at port 9000'; python -m Sim
 alias ytrip="youtube-dl --max-quality 22 --output '%(title)s.%(ext)s'"
 alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security"
 # Things I usually want
-alias tcpdump=tcpdump -vvnX -s0
+alias tcpdump="tcpdump -vvnX -s0"
 
 # Hide a bunch of crap in dig
 alias dig='dig +nocomments +noquestion +nocmd +nostats'

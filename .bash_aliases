@@ -99,6 +99,7 @@ alias gitd='git diff'
 alias gitr='git r'
 alias gitf='git f'
 alias gitb='git branch'
+alias yoink='git stash && git pull && git stash pop'
 alias gsrebase='git-svn-rebase'
 
 alias gh='hg'

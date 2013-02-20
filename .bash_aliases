@@ -88,6 +88,8 @@ alias urldecode='perl -pe '"'"'s/%([0-9a-f]{2})/sprintf("%s", pack("H2",$1))/eig
 alias sharethisdir="echo 'now sharing cur directory at port 9000'; python -m SimpleHTTPServer 9000"
 alias ytrip="youtube-dl --max-quality 22 --output '%(title)s.%(ext)s'"
 alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security"
+# Things I usually want
+alias tcpdump=tcpdump -vvnX -s0
 
 # Hide a bunch of crap in dig
 alias dig='dig +nocomments +noquestion +nocmd +nostats'

@@ -90,6 +90,7 @@ alias ytrip="youtube-dl --max-quality 22 --output '%(title)s.%(ext)s'"
 alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security"
 # Things I usually want
 alias tcpdump="tcpdump -vvnX -s0"
+alias mci="mvn clean install"
 
 # Hide a bunch of crap in dig
 alias dig='dig +nocomments +noquestion +nocmd +nostats'

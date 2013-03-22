@@ -45,3 +45,11 @@ function calc {
 function getip {
     host $1|grep " has address "|cut -d" " -f4
 }
+
+function g {
+    if [[ $# > 0 ]]; then
+        git $@
+    else
+        git status --short --branch
+    fi
+}

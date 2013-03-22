@@ -10,7 +10,7 @@
     ci = commit
     co = checkout
     br = branch
-    pb = push -u origin
+    pb = push -u origin --tags
     f = fetch --all
     pull = pull --rebase
     r = remote -v

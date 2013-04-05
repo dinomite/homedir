@@ -53,8 +53,14 @@
     date = short
 [core]
     excludesfile = /Users/dinomite/.gitignore.global
-	quotepath = false
+    quotepath = false
 [branch]
     autosetuprebase = always
 [push]
     default = current
+
+[credential]
+    helper = /opt/boxen/bin/boxen-git-credential
+
+[hub]
+    protocol = https

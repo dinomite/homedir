@@ -141,3 +141,6 @@ export HISTTIMEFORMAT='%Y-%m-%d %H:%M:%S - '
 
 ### Act like vi
 #set -o vi
+
+### Pull in Boxen if it exists
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh

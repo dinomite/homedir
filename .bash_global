@@ -64,6 +64,9 @@ PROMPT_COMMAND=build_prompt
 # Prefer symlinks in Autojump
 export AUTOJUMP_KEEP_SYMLINKS=1
 
+### Pull in Boxen if it exists
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
 # System installed extensions
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
@@ -72,7 +75,10 @@ if [ -f /etc/profile.d/autojump.bash ]; then
     . /etc/profile.d/autojump.bash
 fi
 # Homebrew installed extensions
-if [ -e /usr/local/bin/brew ]; then
+if type brew > /dev/null 2>&1; then
+    BREW=`brew --prefix`/bin/brew
+fi
+if [ -e $BREW ]; then
     # Completion
     if [ -f `brew --prefix`/etc/bash_completion ]; then
         . `brew --prefix`/etc/bash_completion
@@ -141,6 +147,3 @@ export HISTTIMEFORMAT='%Y-%m-%d %H:%M:%S - '
 
 ### Act like vi
 #set -o vi
-
-### Pull in Boxen if it exists
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh

@@ -52,7 +52,7 @@
 [blame]
     date = short
 [core]
-    excludesfile = /Users/dinomite/.gitignore.global
+    excludesfile = /opt/boxen/config/git/gitignore
     quotepath = false
 [branch]
     autosetuprebase = always

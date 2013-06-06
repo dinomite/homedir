@@ -104,8 +104,8 @@ channels = (
   { name = "#csh"; chatnet = "EFNet"; autojoin = "yes"; },
   { name = "#lemons"; chatnet = "Freenode"; autojoin = "yes"; },
   #  { name = "#archiveteam"; chatnet = "EFNet"; autojoin = "yes"; },
-  { name = "#2600"; chatnet = "2600Net"; autojoin = "yes"; },
-  { name = "#shmoocon"; chatnet = "2600Net"; autojoin = "yes"; },
+  # { name = "#2600"; chatnet = "2600Net"; autojoin = "yes"; },
+  # { name = "#shmoocon"; chatnet = "2600Net"; autojoin = "yes"; },
   #  { name = "#dc2600"; chatnet = "2600Net"; autojoin = "yes"; },
   #  { name = "#debian"; chatnet = "Debian"; autojoin = "yes"; },
   #  { name = "#perl"; chatnet = "Perl"; autojoin = "yes"; }

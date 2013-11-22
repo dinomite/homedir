@@ -103,6 +103,7 @@ alias gitr='git r'
 alias gitf='git f'
 alias gitb='git branch'
 alias yoink='git stash && git pull && git stash pop'
+alias yolo='git push -f'
 alias gsrebase='git-svn-rebase'
 
 alias gh='hg'

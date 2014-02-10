@@ -24,7 +24,7 @@ alias .......="cd ../../../../../.."
 
 # Always use extended regex
 #alias grep="egrep"
-#alias cgrep="egrep --color=always"
+alias cgrep="egrep --color=always"
 # Grep with line numbers and colors
 alias G="grep -n --color=always --binary-file=without-match --exclude=tags --exclude=*-min.js --exclude-dir='.[a-zA-Z]*' --exclude-dir='external' --exclude-dir='blib'"
 # Add recursive & insensitive matching
@@ -91,6 +91,7 @@ alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome 
 # Things I usually want
 alias tcpdump="tcpdump -vvnX -s0"
 alias mci="mvn clean install"
+alias gci="gradle clean install"
 
 # Hide a bunch of crap in dig
 alias dig='dig +nocomments +noquestion +nocmd +nostats'

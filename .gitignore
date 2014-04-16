@@ -48,6 +48,7 @@ tmp
 .cups
 .dropbox
 .dropbox-dist
+.dropbox-master
 .eclipse_keyring
 .elasticbeanstalk
 .erlang.cookie

@@ -26,6 +26,7 @@ tmp
 .android
 .appcfg*
 .aptitude
+.aws
 .bash_history
 .bash_local
 .bzr.log
@@ -36,7 +37,10 @@ tmp
 .config/Nokia
 .config/fish/fish_history
 .config/fish/fishd.*
+.config/gtk-2.0/
 .config/pianobar/state
+.config/stetic/
+.config/xbuild/
 .cpan
 .cpanm
 .cpanreporter/reports-sent.db
@@ -45,6 +49,7 @@ tmp
 .dropbox
 .dropbox-dist
 .eclipse_keyring
+.elasticbeanstalk
 .erlang.cookie
 .fontconfig
 .fonts/encodings.dir
@@ -53,6 +58,7 @@ tmp
 .fonts/fonts.scale
 .forward
 .gem
+.gnuplot_history
 .gradle
 .grain
 .groovy
@@ -81,7 +87,7 @@ tmp
 .rediscli_history
 .rnd
 .rvm
-.s3cfg
+.s3cfg*
 .spinner.pid
 .sqlite_history
 .subversion_IDEA

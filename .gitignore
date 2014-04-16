@@ -32,6 +32,7 @@ tmp
 .cache
 .certs
 .chef
+.chirp/debug.log
 .config/Nokia
 .config/fish/fish_history
 .config/fish/fishd.*
@@ -53,6 +54,7 @@ tmp
 .forward
 .gem
 .gradle
+.grain
 .groovy
 .heroku
 .hgext/attic.pyc
@@ -86,6 +88,8 @@ tmp
 .subversion/auth
 .sudo_as_admin_successful
 .svn
+.tor
+.torrc
 .vagrant.d
 .vim-fuf
 .vim-fuf-data

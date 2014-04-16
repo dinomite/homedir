@@ -33,6 +33,9 @@ tmp
 .certs
 .chef
 .config/Nokia
+.config/fish/fish_history
+.config/fish/fishd.*
+.config/pianobar/state
 .cpan
 .cpanm
 .cpanreporter/reports-sent.db
@@ -42,8 +45,6 @@ tmp
 .dropbox-dist
 .eclipse_keyring
 .erlang.cookie
-.config/fish/fish_history
-.config/fish/fishd.*
 .fontconfig
 .fonts/encodings.dir
 .fonts/fonts.dir

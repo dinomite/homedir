@@ -54,6 +54,7 @@
 [core]
     excludesfile = /opt/boxen/config/git/gitignore
     quotepath = false
+	autocrlf = input
 [branch]
     autosetuprebase = always
 [push]

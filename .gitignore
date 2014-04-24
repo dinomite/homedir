@@ -42,6 +42,7 @@ tmp
 .config/pianobar/state
 .config/stetic/
 .config/xbuild/
+.connecteddata
 .cpan
 .cpanm
 .cpanreporter/reports-sent.db

@@ -52,16 +52,12 @@
 [blame]
     date = short
 [core]
-    excludesfile = /opt/boxen/config/git/gitignore
     quotepath = false
 	autocrlf = input
 [branch]
     autosetuprebase = always
 [push]
     default = current
-
-[credential]
-    helper = /opt/boxen/bin/boxen-git-credential
 
 [hub]
     protocol = https

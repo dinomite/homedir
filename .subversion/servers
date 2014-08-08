@@ -156,3 +156,6 @@
 # store-plaintext-passwords = no
 # store-ssl-client-cert-pp = no
 # store-ssl-client-cert-pp-plaintext = no
+http-proxy-exceptions = *.aexp.com
+http-proxy-host = localhost
+http-proxy-port = 9090

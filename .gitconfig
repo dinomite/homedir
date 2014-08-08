@@ -58,6 +58,9 @@
     autosetuprebase = always
 [push]
     default = current
-
+[http]
+    proxy = http://localhost:9090
+[https]
+    proxy = http://localhost:9090
 [hub]
     protocol = https

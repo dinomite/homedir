@@ -25,6 +25,7 @@ tmp
 .Trash
 .Xauthority
 .android
+.anyconnect
 .appcfg*
 .aptitude
 .aws

@@ -74,10 +74,10 @@ if [ -f /etc/profile.d/autojump.bash ]; then
     . /etc/profile.d/autojump.bash
 fi
 # Homebrew installed extensions
-if type brew > /dev/null 2>&1; then
+if hash brew 2> /dev/null; then
     BREW=`brew --prefix`/bin/brew
 fi
-if [ -e $BREW ]; then
+if [ -n "$BREW" ]; then
     # Completion
     if [ -f `brew --prefix`/etc/bash_completion ]; then
         . `brew --prefix`/etc/bash_completion

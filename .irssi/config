@@ -279,3 +279,7 @@ statusbar = {
   };
 };
 logs = { };
+ignores = (
+  { mask = "JOINS"; level = "ALL"; },
+  { level = "JOINS PARTS QUITS"; channels = ( "#atp" ); }
+);

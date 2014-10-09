@@ -144,5 +144,9 @@ export HISTIGNORE="&:ls:sl"
 # Store a timestamp in the history
 export HISTTIMEFORMAT='%Y-%m-%d %H:%M:%S - '
 
+# Search history with arrow keys
+bind '"\e[A":history-search-backward'
+bind '"\e[B":history-search-forward'
+
 ### Act like vi
 #set -o vi

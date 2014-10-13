@@ -131,6 +131,7 @@ alias jdebug='java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,addr
 ###########################
 ##### Remote Machines #####
 ###########################
+alias juno="mosh dinomite@juno.dinomite.net"
 alias caligula="mosh dinomite@caligula.dinomite.net"
 alias router="ssh root@192.168.2.254"
 alias beaglebone="ssh root@192.168.2.148"

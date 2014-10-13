@@ -17,7 +17,7 @@ if [ $HOSTNAME = 'Titus' ] || [ $HOSTNAME = 'Titus.local' ] || [ $HOSTNAME = 'ti
     export HOST_COLOR="\[\033[1;35m\]"
 elif [ $HOSTNAME = 'caligula' ]; then
     export HOST_COLOR="\[\033[1;36m\]"
-elif [ $HOSTNAME = 'Trajan' ]; then
+elif [ $HOSTNAME = 'juno' ]; then
     export HOST_COLOR="\[\033[1;30m\]"
 fi
 

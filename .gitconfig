@@ -24,6 +24,7 @@
     behind = log --stat --format=format:'"%C(yellow)%h %C(cyan)%an %C(blue)(%cn) %ad\n%C(green)%s\n%b%N"' HEAD..origin/master
     hist = log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset (%Cgreen%cr%Creset) %s [%Cblue%an%Creset]' --graph --abbrev-commit --date=relative
     prev = checkout @{-1}
+    heads = for-each-ref --sort=-committerdate refs/heads/ --format='"%(refname:short) %1B[0;36m%(authorname)%1B[m %1B[0;33m%(committerdate)%1B[m"'
 [color]
     branch = auto
     diff = auto

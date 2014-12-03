@@ -91,7 +91,7 @@ fi
 
 # Ignore .svn directories when completing
 export FIGNORE=".svn"
-if [ -v PS1 ]; then
+if [ -z PS1 ]; then
     bind 'set match-hidden-files off'
 fi
 
@@ -147,7 +147,7 @@ export HISTIGNORE="&:ls:sl"
 export HISTTIMEFORMAT='%Y-%m-%d %H:%M:%S - '
 
 # Search history with arrow keys
-if [ -v PS1 ]; then
+if [ -z PS1 ]; then
     bind '"\e[A":history-search-backward'
     bind '"\e[B":history-search-forward'
 fi

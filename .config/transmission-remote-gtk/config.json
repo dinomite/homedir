@@ -2,7 +2,7 @@
   "profiles" : [
     {
       "profile-name" : "Default",
-      "hostname" : "192.168.2.254",
+      "hostname" : "192.168.2.100",
       "port" : 9091,
       "rpc-url-path" : "/transmission/rpc",
       "username" : "admin",

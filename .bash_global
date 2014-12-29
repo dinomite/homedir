@@ -76,6 +76,7 @@ fi
 # Homebrew installed extensions
 if hash brew 2> /dev/null; then
     BREW=`brew --prefix`/bin/brew
+    HOMEBREW_GITHUB_API_TOKEN='0e011744f6da031aafe07a62c4385bc2015517f3'
 fi
 if [ -n "$BREW" ]; then
     # Completion

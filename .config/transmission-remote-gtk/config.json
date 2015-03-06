@@ -42,7 +42,7 @@
         95,
         112,
         69,
-        318
+        299
       ],
       "columns" : [
         "name",
@@ -139,6 +139,6 @@
   "window-width" : 2079,
   "notebook-paned-pos" : 829,
   "states-paned-pos" : 120,
-  "state-selector-last" : 1,
+  "state-selector-last" : 6,
   "style" : 1
 }

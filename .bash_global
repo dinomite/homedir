@@ -130,8 +130,6 @@ export LANGUAGE="en_US.UTF-8"
 # Give Maven more memory
 export MAVEN_OPTS=-Xmx1024m
 
-# Make Ruby gems install to /usr/local
-export GEM_HOME=/usr/local
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 ### Capture more history

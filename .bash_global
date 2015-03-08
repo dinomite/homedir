@@ -13,7 +13,7 @@ MANPATH=$HOME/.software/man:/opt/local/man:/opt/local/share/man:/usr/local/share
 ### Prompt variable
 # Color the hostname
 HOSTNAME=`hostname|sed -e 's/\..*$//'`
-if [ $HOSTNAME = 'Titus' ] || [ $HOSTNAME = 'Titus.local' ] || [ $HOSTNAME = 'titus' ]; then
+if [ $HOSTNAME = 'Caracalla' ] || [ $HOSTNAME = 'Caracalla.local' ] || [ $HOSTNAME = 'caracalla' ]; then
     export HOST_COLOR="\[\033[1;35m\]"
 elif [ $HOSTNAME = 'didius' ]; then
     export HOST_COLOR="\[\033[1;36m\]"
@@ -67,11 +67,11 @@ PROMPT_COMMAND=build_prompt
 export AUTOJUMP_KEEP_SYMLINKS=1
 
 # System installed extensions
-if [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
+if [ -f /usr/local/etc/bash_completion ]; then
+    . /usr/local/etc/bash_completion
 fi
-if [ -f /etc/profile.d/autojump.bash ]; then
-    . /etc/profile.d/autojump.bash
+if [ -f /usr/local/etc/profile.d/autojump.sh ]; then
+    . /usr/local/etc/profile.d/autojump.sh
 fi
 # Homebrew installed extensions
 if hash brew 2> /dev/null; then

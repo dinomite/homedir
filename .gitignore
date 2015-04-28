@@ -21,9 +21,13 @@ public_html
 sandbox
 tmp
 .*.sw*
+.BayPhotoEconomy/
 .DS_Store
 .MacOSX
+.ROESEngineCache/
+.RubyMine70/
 .Trash
+.WebStorm10/
 .Xauthority
 .android
 .appcfg*
@@ -92,6 +96,7 @@ tmp
 .psql_history
 .rediscli_history
 .rnd
+.roescache/
 .rvm
 .s3cfg*
 .spinner.pid

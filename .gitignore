@@ -41,6 +41,7 @@ tmp
 .chef
 .chirp/debug.log
 .config/Nokia
+.config/Transmission Remote GUI/
 .config/fish/fish_history
 .config/fish/fishd.*
 .config/gtk-2.0/

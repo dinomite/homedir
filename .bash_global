@@ -131,6 +131,7 @@ export LC_ALL="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 # Give Maven more memory
 export MAVEN_OPTS=-Xmx1024m
+export PYTHONSTARTUP=~/.pythonrc
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 

@@ -97,6 +97,7 @@ tmp
 .perlbrew
 .profile
 .psql_history
+.pyhistory
 .rediscli_history
 .rnd
 .roescache/

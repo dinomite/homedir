@@ -131,7 +131,12 @@ export LC_ALL="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 # Give Maven more memory
 export MAVEN_OPTS=-Xmx1024m
+
+# Python
 export PYTHONSTARTUP=~/.pythonrc
+if [ -f $HOME/.venvburrito/startup.sh ]; then
+    . $HOME/.venvburrito/startup.sh
+fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 

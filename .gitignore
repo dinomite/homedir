@@ -114,6 +114,8 @@ tmp
 .vim-fuf
 .vim-fuf-data
 .viminfo
+.venvburrito/
+.virtualenvs/
 .xscreensaver-getimage.cache
 .wireshark-etc/
 .wireshark/

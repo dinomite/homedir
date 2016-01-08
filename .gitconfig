@@ -59,7 +59,8 @@
 [branch]
     autosetuprebase = always
 [push]
-    default = current
+    ;default = current
+    default = simple
 
 [hub]
     protocol = https

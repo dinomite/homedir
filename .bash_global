@@ -124,7 +124,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 ### Standard variables
 export PAGER='less -R'
 export EDITOR='vim'
-export BROWSER='firefox'
+export BROWSER='chrome'
 export CC='gcc'
 # Make perl localization work
 export LC_ALL="en_US.UTF-8"

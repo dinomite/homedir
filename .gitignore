@@ -69,7 +69,8 @@ tmp
 .forward
 .gem
 .gnuplot_history
-.gradle
+.gradle/caches
+.gradle/native
 .grain
 .groovy
 .heroku

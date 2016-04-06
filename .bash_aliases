@@ -91,7 +91,8 @@ alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome 
 # Things I usually want
 alias tcpdump="tcpdump -vvnX -s0"
 alias mci="mvn clean install"
-alias gci="gradle clean install"
+alias gcb="./gradlew clean build"
+alias gr="./gradlew"
 
 # Hide a bunch of crap in dig
 alias dig='dig +nocomments +noquestion +nocmd +nostats'

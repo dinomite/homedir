@@ -71,6 +71,8 @@ tmp
 .gnuplot_history
 .gradle/caches
 .gradle/native
+.gradle/daemon
+.gradle/wrapper
 .grain
 .groovy
 .heroku

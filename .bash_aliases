@@ -93,6 +93,7 @@ alias tcpdump="tcpdump -vvnX -s0"
 alias mci="mvn clean install"
 alias gcb="./gradlew clean build"
 alias gr="./gradlew"
+alias gw="./gradlew"
 
 # Hide a bunch of crap in dig
 alias dig='dig +nocomments +noquestion +nocmd +nostats'

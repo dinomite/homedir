@@ -1,5 +1,5 @@
 \set QUIET 1
-\pset null '¤'
+\pset null '[NULL]'
 
 \set PROMPT1 '[%/] # '
 

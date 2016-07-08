@@ -18,4 +18,4 @@
 	url = ssh://dinomite@dinomite.net/home/dinomite/git_repos/gnupg
 [submodule ".ec2"]
 	path = .ec2
-	url = ssh://dinomite@dinomite.net/home/dinomite/git_repos/ec2
+	url = git@bitbucket.org:dinomite/ec2.git

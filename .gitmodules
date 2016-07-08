@@ -12,7 +12,7 @@
 	url = git@github.com:dinomite/git-tools.git
 [submodule ".ssh"]
 	path = .ssh
-	url = ssh://dinomite@dinomite.net/home/dinomite/git_repos/ssh
+	url = git@bitbucket.org:dinomite/ssh.git
 [submodule ".gnupg"]
 	path = .gnupg
 	url = ssh://dinomite@dinomite.net/home/dinomite/git_repos/gnupg

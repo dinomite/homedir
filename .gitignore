@@ -35,6 +35,8 @@ tmp
 .aws
 .bash_history
 .bash_local
+.bash_sessions/
+.bundle/
 .bzr.log
 .cache
 .certs
@@ -46,8 +48,10 @@ tmp
 .config/fish/fish_history
 .config/fish/fishd.*
 .config/gtk-2.0/
+.config/heroku/
 .config/pianobar/state
 .config/stetic/
+.config/wireshark/
 .config/xbuild/
 .connecteddata
 .cpan
@@ -55,6 +59,7 @@ tmp
 .cpanreporter/reports-sent.db
 .crontab
 .cups
+.docker/
 .dropbox
 .dropbox-dist
 .dropbox-master
@@ -77,7 +82,7 @@ tmp
 .groovy
 .heroku
 .hgext/attic.pyc
-.ievms
+.ideavimrc
 .irb_history
 .irb-history
 .irssi/fnotify
@@ -92,6 +97,8 @@ tmp
 .netextender
 .node-gyp
 .npm
+.node_repl_history
+.nylas/
 .offlineimap
 .offlineimaprc
 .org.eclipse.epp.usagedata.recording.userId
@@ -121,5 +128,7 @@ tmp
 .venvburrito/
 .virtualenvs/
 .xscreensaver-getimage.cache
+.wget-hsts
 .wireshark-etc/
 .wireshark/
+.yjp/

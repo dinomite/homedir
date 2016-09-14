@@ -94,6 +94,7 @@ alias mci="mvn clean install"
 alias gcb="./gradlew clean build"
 alias gr="./gradlew"
 alias gw="./gradlew"
+alias rubocop="rubocop -DE"
 
 # Hide a bunch of crap in dig
 alias dig='dig +nocomments +noquestion +nocmd +nostats'

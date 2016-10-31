@@ -75,6 +75,7 @@ tmp
 .fonts/fonts.scale
 .forward
 .gem
+.gmvault
 .gnuplot_history
 .gradle/caches
 .gradle/native

@@ -12,6 +12,7 @@ Pictures
 Public
 Sites
 SpiderOak Hive
+Seafile
 Transporter
 Virtualbox VMs
 clear
@@ -39,6 +40,7 @@ tmp
 .bundle/
 .bzr.log
 .cache
+.ccnet
 .certs
 .chef
 .chirp/debug.log

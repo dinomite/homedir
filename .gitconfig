@@ -12,7 +12,7 @@
     br = branch
     pb = push -u origin
     f = fetch --all
-    pull = pull --rebase
+    pull = pull --rebasegit --autostash
     r = remote -v
     b = branch -a
     info = remote show origin

@@ -69,26 +69,26 @@ PROMPT_COMMAND=build_prompt
 # Prefer symlinks in Autojump
 export AUTOJUMP_KEEP_SYMLINKS=1
 
-# System installed extensions
-if [ -f /usr/local/etc/bash_completion ]; then
-    . /usr/local/etc/bash_completion
-fi
-if [ -f /usr/local/etc/profile.d/autojump.sh ]; then
-    . /usr/local/etc/profile.d/autojump.sh
-fi
-# Homebrew installed extensions
 if hash brew 2> /dev/null; then
-    BREW=`brew --prefix`/bin/brew
+    BREW_PREFIX=`brew --prefix`
 fi
-if [ -n "$BREW" ]; then
-    # Completion
-    if [ -f `brew --prefix`/etc/bash_completion ]; then
-        . `brew --prefix`/etc/bash_completion
+if [ -n "$BREW_PREFIX" ]; then
+    # Homebrew installed extensions
+    if [ -f $BREW_PREFIX/etc/bash_completion ]; then
+        . $BREW_PREFIX/etc/bash_completion
     fi
 
-    # Autojump
-    if [ -f `brew --prefix`/etc/autojump.bash ]; then
-        . `brew --prefix`/etc/autojump.bash
+    if [ -f $BREW_PREFIX/etc/autojump.bash ]; then
+        . $BREW_PREFIX/etc/autojump.bash
+    fi
+else
+    # System installed extensions
+    if [ -f /usr/local/etc/bash_completion ]; then
+        . /usr/local/etc/bash_completion
+    fi
+
+    if [ -f /usr/local/etc/profile.d/autojump.sh ]; then
+        . /usr/local/etc/profile.d/autojump.sh
     fi
 fi
 
@@ -138,7 +138,7 @@ if [ -f $HOME/.venvburrito/startup.sh ]; then
     . $HOME/.venvburrito/startup.sh
 fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # 200ms
 
 ### Capture more history
 #"I know I've used that command before, but I can't remember the syntax"

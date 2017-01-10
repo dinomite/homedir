@@ -5,7 +5,7 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
-    autoconnect = "yes";
+    autoconnect = "no";
   },
   {
     address = "chat.us.freenode.net";
@@ -13,7 +13,7 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
-    autoconnect = "yes";
+    autoconnect = "no";
   },
   {
     address = "irc.2600.net";
@@ -21,7 +21,7 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
-    autoconnect = "yes";
+    autoconnect = "no";
   },
   {
     address = "irc.debian.org";
@@ -98,14 +98,15 @@ chatnets = {
   };
 
   Perl = { type = "IRC"; max_kicks = "4"; max_msgs = "3"; max_whois = "2"; };
+  "p2p-network" = { type = "IRC"; };
 };
 
 channels = (
   { name = "#csh"; chatnet = "EFNet"; autojoin = "yes"; },
   { name = "#lemons"; chatnet = "Freenode"; autojoin = "yes"; },
   #  { name = "#archiveteam"; chatnet = "EFNet"; autojoin = "yes"; },
-  { name = "#2600"; chatnet = "2600Net"; autojoin = "yes"; },
-  { name = "#shmoocon"; chatnet = "2600Net"; autojoin = "yes"; },
+  # { name = "#2600"; chatnet = "2600Net"; autojoin = "yes"; },
+  # { name = "#shmoocon"; chatnet = "2600Net"; autojoin = "yes"; },
   #  { name = "#dc2600"; chatnet = "2600Net"; autojoin = "yes"; },
   #  { name = "#debian"; chatnet = "Debian"; autojoin = "yes"; },
   #  { name = "#perl"; chatnet = "Perl"; autojoin = "yes"; }
@@ -175,8 +176,8 @@ statusbar = {
     topicbarend = "{topicsbend}";
 
     # treated "normally", you could change the time/user name to whatever
-    time = "{sb $Z}";
-    user = "{sb {sbnickmode $cumode}$N{sbmode $usermode}{sbaway $A}}";
+    time = "$Z";
+    user = " {sbnickmode $cumode}$N{sbmode $usermode}{sbaway $A}";
 
     # treated specially .. window is printed with non-empty windows,
     # window_empty is printed with empty windows
@@ -279,4 +280,11 @@ statusbar = {
   };
 };
 logs = { };
-ignores = ( { level = "ALL"; } );
+ignores = (
+  { mask = "JOINS"; level = "ALL"; },
+  { level = "JOINS PARTS QUITS"; channels = ( "#atp" ); },
+  { 
+    level = "JOINS PARTS QUITS MODES";
+    channels = ( "#archiveteam" );
+  }
+);

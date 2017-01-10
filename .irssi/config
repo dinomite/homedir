@@ -38,6 +38,13 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "no";
+  },
+  {
+    address = "irc.rippy.rip";
+    chatnet = "Rippy";
+    port = "6697";
+    use_ssl = "yes";
+    autoconnect = "yes";
   }
 );
 
@@ -98,6 +105,8 @@ chatnets = {
   };
 
   Perl = { type = "IRC"; max_kicks = "4"; max_msgs = "3"; max_whois = "2"; };
+  "p2p-network" = { type = "IRC"; };
+  Rippy = { type = "IRC"; };
 };
 
 channels = (
@@ -273,6 +282,41 @@ statusbar = {
       items = {
         barstart = { priority = "100"; };
         awl_0 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_1 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_1 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_2 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_2 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_3 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_3 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_4 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_4 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_5 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_5 = { };
         barend = { priority = "100"; alignment = "right"; };
       };
     };

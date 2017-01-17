@@ -78,8 +78,8 @@ if [ -n "$BREW_PREFIX" ]; then
         . $BREW_PREFIX/etc/bash_completion
     fi
 
-    if [ -f $BREW_PREFIX/etc/autojump.bash ]; then
-        . $BREW_PREFIX/etc/autojump.bash
+    if [ -f $BREW_PREFIX/etc/profile.d/autojump.sh ]; then
+        . $BREW_PREFIX/etc/profile.d/autojump.sh
     fi
 else
     # System installed extensions

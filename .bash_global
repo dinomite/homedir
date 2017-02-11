@@ -141,7 +141,7 @@ fi
 
 ### Capture more history
 #"I know I've used that command before, but I can't remember the syntax"
-export HISTFILESIZE=500000
+export HISTFILESIZE=2000000
 export HISTSIZE=500000
 shopt -s histappend
 # Combine multiline commands into one in historty

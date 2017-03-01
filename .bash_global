@@ -92,6 +92,11 @@ else
     fi
 fi
 
+# Android SDK
+if [ -d /usr/local/opt/android-sdk ]; then
+    export ANDROID_HOME=/usr/local/opt/android-sdk
+fi
+
 # Ignore .svn directories when completing
 export FIGNORE=".svn"
 if [ -z PS1 ]; then

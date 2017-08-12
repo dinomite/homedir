@@ -1,11 +1,3 @@
-#if [ $BASH_GLOBAL ]; then
-#    echo "Not sourcing bash_global again"
-#    return
-#fi
-#BASH_GLOBAL=1
-
-export GPGKEY=935FCCA5
-
 ### Paths
 PATH=$HOME/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:$HOME/.rvm/bin:/opt/android/tools:$PATH
 MANPATH=$HOME/.software/man:/opt/local/man:/opt/local/share/man:/usr/local/share/man:$MANPATH

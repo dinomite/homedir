@@ -65,3 +65,5 @@
 
 [hub]
     protocol = https
+[credential]
+	helper = osxkeychain

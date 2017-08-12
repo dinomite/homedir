@@ -19,6 +19,7 @@ clear
 mail
 perl5
 public_html
+qm/
 sandbox
 tmp
 .*.sw*

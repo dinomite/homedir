@@ -11,7 +11,6 @@ Music
 Pictures
 Public
 Sites
-SpiderOak Hive
 Seafile
 Transporter
 Virtualbox VMs
@@ -91,6 +90,8 @@ tmp
 .irb-history
 .irssi/fnotify
 .keepassx
+.kobalt
+.kotlin_history
 .kube
 .lesshst
 .local

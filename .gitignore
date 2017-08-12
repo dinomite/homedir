@@ -106,6 +106,7 @@ tmp
 .nylas/
 .offlineimap
 .offlineimaprc
+.oracle_jre_usage/
 .org.eclipse.epp.usagedata.recording.userId
 .pause
 .pip/pip.log

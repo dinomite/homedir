@@ -110,10 +110,6 @@ alias gitb='git branch'
 alias yoink='git stash && git pull && git stash pop'
 alias yolo='git push -f'
 alias gsrebase='git-svn-rebase'
-alias wow='g'
-alias such='git'
-alias very='git'
-alias many='git'
 alias prune="git branch -r | awk '{print \$1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print \$1}' | xargs git branch -d"
 
 alias gh='hg'

@@ -53,10 +53,13 @@ function g {
         git status --short --branch
     fi
 }
+function gitc {
+    git co -t $(git branch -r | grep "$1")
+}
 
 # Kill things in style
 function fuck() {
-    if killall -9 "$2"; then
-        echo ; echo " (╯°□°）╯︵$(echo "$2"|toilet -f term -F rotate)"; echo
+    if pkill -9 "$1"; then
+        echo ; echo " (╯°□°）╯︵$(echo "$1"|toilet -f term -F rotate)"; echo
     fi
 }

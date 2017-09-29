@@ -84,11 +84,6 @@ else
     fi
 fi
 
-# Android SDK
-if [ -d /usr/local/opt/android-sdk ]; then
-    export ANDROID_HOME=/usr/local/opt/android-sdk
-fi
-
 # Ignore .svn directories when completing
 export FIGNORE=".svn"
 if [ -z PS1 ]; then
@@ -107,7 +102,6 @@ fi
 # Different options for ls depending on system
 if [ $OS_TYPE = 'macos' ]; then
     export LS_OPTIONS='-G'
-    export PYTHONPATH="$PYTHONPATH:/Library/Python/2.7/site-packages/"
 elif [ $OS_TYPE = 'freebsd' ]; then
     export LS_OPTIONS='-G'
 elif [ $OS_TYPE = 'linux' ]; then
@@ -121,18 +115,12 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 ### Standard variables
 export PAGER='less -R'
 export EDITOR='vim'
-export BROWSER='chrome'
+export BROWSER='firefox'
 # Make perl localization work
 export LC_ALL="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 # Give Maven more memory
 export MAVEN_OPTS=-Xmx1024m
-
-# Python
-export PYTHONSTARTUP=~/.pythonrc
-if [ -f $HOME/.venvburrito/startup.sh ]; then
-    . $HOME/.venvburrito/startup.sh
-fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # 200ms
 

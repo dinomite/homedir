@@ -107,6 +107,7 @@ alias gitd='git diff'
 alias gitr='git r'
 alias gitf='git f'
 alias gitb='git branch'
+alias branchify="pbpaste|tr '[:upper:] ' '[:lower:]-'|pbcopy"
 alias yoink='git stash && git pull && git stash pop'
 alias yolo='git push -f'
 alias gsrebase='git-svn-rebase'
@@ -122,6 +123,7 @@ alias routes='netstat -nr -f inet'
 # Docker
 alias docker-stop='docker stop $(docker ps|tail -1|fawk NF)'
 alias docker-bash='docker exec -t -i $(docker ps|tail -1|fawk NF) /bin/bash'
+alias d='docker'
 
 #####################
 ##### Compiling #####

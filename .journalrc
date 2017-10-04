@@ -1,8 +1,0 @@
-[journal]
-default: food
-
-[food]
-location: ~/Dropbox/journals/food
-
-[work]
-location: ~/Dropbox/journals/work

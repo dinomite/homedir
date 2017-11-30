@@ -69,6 +69,7 @@ function mb() {
 }
 
 function gr() {
+    REPOSITORY_ROOT="basename $(git rev-parse --show-toplevel)"
     PREVIOUS_DIR=$PWD
     PROJECT_NAME=""
 
@@ -87,7 +88,7 @@ function gr() {
             break
         fi
 
-        if [[ $PWD == *qm2 ]]; then
+        if [[ $PWD == *$REPOSITORY_ROOT ]]; then
             echo "No gradlew found :-("
             break
         fi

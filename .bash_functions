@@ -70,10 +70,20 @@ function mb() {
 
 function gr() {
     PREVIOUS_DIR=$PWD
+    PROJECT_NAME=""
 
     while [[ $PWD != / ]]; do
         if [[ -x "gradlew" ]]; then
-            ./gradlew "$@"
+            NEW_ARGUMENTS=()
+            for command in $@; do
+                if [[ $command == -* ]]; then
+                    NEW_ARGUMENTS+=" $command"
+                else
+                    NEW_ARGUMENTS+=" $PROJECT_NAME$command"
+                fi
+            done
+
+            ( set -x; ./gradlew $NEW_ARGUMENTS )
             break
         fi
 
@@ -81,6 +91,9 @@ function gr() {
             echo "No gradlew found :-("
             break
         fi
+
+        BASENAME="$(basename $PWD)"
+        PROJECT_NAME="$BASENAME:$PROJECT_NAME"
         cd ..
     done
 

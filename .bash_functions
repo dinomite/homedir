@@ -63,3 +63,26 @@ function fuck() {
         echo ; echo " (╯°□°）╯︵$(echo "$1"|toilet -f term -F rotate)"; echo
     fi
 }
+
+function mb() {
+  $(git rev-parse --show-toplevel)/scripts/monobuild.sh "$@"
+}
+
+function gr() {
+    PREVIOUS_DIR=$PWD
+
+    while [[ $PWD != / ]]; do
+        if [[ -x "gradlew" ]]; then
+            ./gradlew "$@"
+            break
+        fi
+
+        if [[ $PWD == *qm2 ]]; then
+            echo "No gradlew found :-("
+            break
+        fi
+        cd ..
+    done
+
+    cd $PREVIOUS_DIR
+}

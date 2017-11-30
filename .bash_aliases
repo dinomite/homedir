@@ -92,7 +92,7 @@ alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome 
 alias tcpdump="tcpdump -vvnX -s0"
 alias mci="mvn clean install"
 alias gcb="./gradlew clean build"
-alias gr="./gradlew"
+#alias gr="./gradlew"
 alias gw="./gradlew"
 alias rubocop="rubocop -DE"
 alias kb="./kobaltw"
@@ -124,6 +124,7 @@ alias routes='netstat -nr -f inet'
 alias docker-stop='docker stop $(docker ps|tail -1|fawk NF)'
 alias docker-bash='docker exec -t -i $(docker ps|tail -1|fawk NF) /bin/bash'
 alias d='docker'
+alias dps='docker ps --format "table {{.ID}}\t{{.CreatedAt}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"'
 
 #####################
 ##### Compiling #####
@@ -160,3 +161,7 @@ alias rancor="ssh rancor.csh.rit.edu"
 ##### Clearspring #####
 # Completion for cssh (see ~/bin/cssh)
 complete -F _ssh cssh
+
+##### QuanticMind #####
+alias mbs='mb -c setVersion'
+alias mbb='mb -c build'

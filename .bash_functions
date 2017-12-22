@@ -67,36 +67,3 @@ function fuck() {
 function mb() {
   $(git rev-parse --show-toplevel)/scripts/monobuild.sh "$@"
 }
-
-function gr() {
-    REPOSITORY_ROOT="basename $(git rev-parse --show-toplevel)"
-    PREVIOUS_DIR=$PWD
-    PROJECT_NAME=""
-
-    while [[ $PWD != / ]]; do
-        if [[ -x "gradlew" ]]; then
-            NEW_ARGUMENTS=()
-            for command in $@; do
-                if [[ $command == -* ]]; then
-                    NEW_ARGUMENTS+=" $command"
-                else
-                    NEW_ARGUMENTS+=" $PROJECT_NAME$command"
-                fi
-            done
-
-            ( set -x; ./gradlew $NEW_ARGUMENTS )
-            break
-        fi
-
-        if [[ $PWD == *$REPOSITORY_ROOT ]]; then
-            echo "No gradlew found :-("
-            break
-        fi
-
-        BASENAME="$(basename $PWD)"
-        PROJECT_NAME="$BASENAME:$PROJECT_NAME"
-        cd ..
-    done
-
-    cd $PREVIOUS_DIR
-}

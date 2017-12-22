@@ -145,3 +145,5 @@ fi
 
 ### Act like vi
 #set -o vi
+
+. ~/src/qm2/bin/helpers.sh

@@ -161,7 +161,3 @@ alias rancor="ssh rancor.csh.rit.edu"
 ##### Clearspring #####
 # Completion for cssh (see ~/bin/cssh)
 complete -F _ssh cssh
-
-##### QuanticMind #####
-alias mbs='mb -c setVersion'
-alias mbb='mb -c build'

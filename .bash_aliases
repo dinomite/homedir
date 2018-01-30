@@ -111,7 +111,7 @@ alias branchify="pbpaste|tr '[:upper:] ' '[:lower:]-'|pbcopy"
 alias yoink='git stash && git pull && git stash pop'
 alias yolo='git push -f'
 alias gsrebase='git-svn-rebase'
-alias prune="git branch -r | awk '{print \$1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print \$1}' | xargs git branch -d"
+alias git-prune='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 
 alias gh='hg'
 alias hgl='hg lnp -l3'

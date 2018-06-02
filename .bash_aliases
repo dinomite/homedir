@@ -125,6 +125,7 @@ alias docker-stop='docker stop $(docker ps|tail -1|fawk NF)'
 alias docker-bash='docker exec -t -i $(docker ps|tail -1|fawk NF) /bin/bash'
 alias d='docker'
 alias dps='docker ps --format "table {{.ID}}\t{{.CreatedAt}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"'
+alias dly='dockly $DOCKER_HOST'
 
 #####################
 ##### Compiling #####

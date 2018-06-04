@@ -8,6 +8,7 @@
     st = status -s -b
     sl = stash list
     ci = commit
+    ic = commit
     co = checkout
     br = branch
     pb = push -u origin

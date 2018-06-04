@@ -111,7 +111,7 @@ alias branchify="pbpaste|tr '[:upper:] ' '[:lower:]-'|pbcopy"
 alias yoink='git stash && git pull && git stash pop'
 alias yolo='git push -f'
 alias gsrebase='git-svn-rebase'
-alias prune="git branch -r | awk '{print \$1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print \$1}' | xargs git branch -d"
+alias git-prune='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 
 alias gh='hg'
 alias hgl='hg lnp -l3'
@@ -125,6 +125,7 @@ alias docker-stop='docker stop $(docker ps|tail -1|fawk NF)'
 alias docker-bash='docker exec -t -i $(docker ps|tail -1|fawk NF) /bin/bash'
 alias d='docker'
 alias dps='docker ps --format "table {{.ID}}\t{{.CreatedAt}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"'
+alias dly='dockly $DOCKER_HOST'
 
 #####################
 ##### Compiling #####
@@ -161,7 +162,3 @@ alias rancor="ssh rancor.csh.rit.edu"
 ##### Clearspring #####
 # Completion for cssh (see ~/bin/cssh)
 complete -F _ssh cssh
-
-##### QuanticMind #####
-alias mbs='mb -c setVersion'
-alias mbb='mb -c build'

@@ -68,35 +68,9 @@ function mb() {
   $(git rev-parse --show-toplevel)/scripts/monobuild.sh "$@"
 }
 
-function gr() {
-    REPOSITORY_ROOT="basename $(git rev-parse --show-toplevel)"
-    PREVIOUS_DIR=$PWD
-    PROJECT_NAME=""
-
-    while [[ $PWD != / ]]; do
-        if [[ -x "gradlew" ]]; then
-            NEW_ARGUMENTS=()
-            for command in $@; do
-                if [[ $command == -* ]]; then
-                    NEW_ARGUMENTS+=" $command"
-                else
-                    NEW_ARGUMENTS+=" $PROJECT_NAME$command"
-                fi
-            done
-
-            ( set -x; ./gradlew $NEW_ARGUMENTS )
-            break
-        fi
-
-        if [[ $PWD == *$REPOSITORY_ROOT ]]; then
-            echo "No gradlew found :-("
-            break
-        fi
-
-        BASENAME="$(basename $PWD)"
-        PROJECT_NAME="$BASENAME:$PROJECT_NAME"
-        cd ..
+# Better which(1)
+function which() {
+    for command in $(which docker-compose|cut -d ' ' -f 3); do
+        ls -lh "$command";
     done
-
-    cd $PREVIOUS_DIR
 }

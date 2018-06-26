@@ -1,2 +1,2 @@
 #!/bin/bash
-open -a /Applications/Synergy.app
+open -j -a /Applications/Synergy.app

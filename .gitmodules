@@ -1,15 +1,6 @@
 [submodule ".vim"]
 	path = .vim
 	url = git@github.com:dinomite/vim.git
-[submodule "bin/submodules/CmdDirs"]
-	path = bin/submodules/CmdDirs
-	url = git@github.com:dinomite/CmdDirs.git
-[submodule "bin/submodules/git-svn-clone-externals"]
-	path = bin/submodules/git-svn-clone-externals
-	url = git@github.com:dinomite/git-svn-clone-externals.git
-[submodule "bin/submodules/git-tools"]
-	path = bin/submodules/git-tools
-	url = git@github.com:dinomite/git-tools.git
 [submodule ".ssh"]
 	path = .ssh
 	url = git@bitbucket.org:dinomite/ssh.git

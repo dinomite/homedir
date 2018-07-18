@@ -98,7 +98,7 @@ alias rubocop="rubocop -DE"
 alias kb="./kobaltw"
 
 # Hide a bunch of crap in dig
-alias dig='dig +nocomments +noquestion +nocmd +nostats'
+alias dig='dig +multiline +nocomments'
 
 alias gti='git'
 alias gitl='git l -n3'

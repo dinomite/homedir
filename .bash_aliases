@@ -38,6 +38,7 @@ alias a="ack"
 alias avg="ack --invert-file-match -G"
 alias shead="sort|uniq -c|sort -rn|head"
 alias t="tail -F"
+alias r="rg"
 
 # Find processes
 alias paux="ps aux|grep -i"

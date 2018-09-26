@@ -100,7 +100,12 @@ alias kb="./kobaltw"
 
 # Hide a bunch of crap in dig
 alias dig='dig +multiline +nocomments'
+alias routes='netstat -nr -f inet'
 
+# Python
+alias ugh='[ -d .venv ] || virtualenv .venv; . .venv/bin/activate'
+
+# Git
 alias gti='git'
 alias gitl='git l -n3'
 alias gits='git st'
@@ -114,12 +119,11 @@ alias yolo='git push -f'
 alias gsrebase='git-svn-rebase'
 alias git-prune='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 
+# Mercurial
 alias gh='hg'
 alias hgl='hg lnp -l3'
 alias hgs='hg st'
 alias hgd='hg diff'
-
-alias routes='netstat -nr -f inet'
 
 # Docker
 alias docker-stop='docker stop $(docker ps|tail -1|fawk NF)'

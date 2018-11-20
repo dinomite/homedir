@@ -7,6 +7,8 @@ set -ex
 BACKUP_DIR=/mnt/pescennius/backups/lxc
 HOSTS=($(lxc list -c n --format csv))
 
+date
+
 for HOST in "${HOSTS[@]}"
 do
     BACKUP_NAME=${HOST}-$(date +"%Y-%m-%d")
@@ -17,3 +19,5 @@ do
     lxc image delete ${BACKUP_NAME}
     lxc delete ${HOST}/auto-backup
 done
+
+date

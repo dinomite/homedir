@@ -15,9 +15,11 @@ do
 
     lxc snapshot ${HOST} auto-backup
     lxc publish ${HOST}/auto-backup --alias ${BACKUP_NAME}
-    lxc image export ${BACKUP_NAME} ${BACKUP_DIR}/${BACKUP_NAME}.tar.gz
+    lxc image export ${BACKUP_NAME} ${BACKUP_DIR}/${BACKUP_NAME}.tar.gz > /dev/null
     lxc image delete ${BACKUP_NAME}
     lxc delete ${HOST}/auto-backup
 done
+
+find /mnt/pescennius/backups/lxc/ -type f -mtime +1 -name '*.tar.gz' -delete
 
 date

@@ -20,6 +20,6 @@ do
     lxc delete ${HOST}/auto-backup
 done
 
-find /mnt/pescennius/backups/lxc/ -type f -mtime +1 -name '*.tar.gz' -delete
+find /mnt/pescennius/backups/lxc/ -type f -mtime +0 -name '*.tar.gz' -delete
 
 date

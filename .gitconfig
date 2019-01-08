@@ -1,6 +1,8 @@
 [user]
-	name = Drew Stephens
-	email = drew@dinomite.net
+    name = Drew Stephens
+    email = drew@dinomite.net
+[includeIf "gitdir:~/src/"]
+    path = ~/src/.gitconfig
 [log]
     date = relative
 [alias]

@@ -1,8 +1,6 @@
 [user]
     name = Drew Stephens
     email = drew@dinomite.net
-[includeIf "gitdir:~/src/"]
-    path = ~/src/.gitconfig
 [log]
     date = relative
 [alias]
@@ -71,5 +69,3 @@
     protocol = https
 [credential]
 	helper = osxkeychain
-[init]
-	templatedir = /Users/dinomite/.git_template

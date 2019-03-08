@@ -1,6 +1,6 @@
 [user]
-	name = Drew Stephens
-	email = drew@dinomite.net
+    name = Drew Stephens
+    email = drew@dinomite.net
 [log]
     date = relative
 [alias]
@@ -69,5 +69,3 @@
     protocol = https
 [credential]
 	helper = osxkeychain
-[init]
-	templatedir = /Users/dinomite/.git_template

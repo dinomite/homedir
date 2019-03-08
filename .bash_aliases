@@ -92,6 +92,7 @@ alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome 
 # Things I usually want
 alias tcpdump="tcpdump -vvnX -s0"
 alias mci="mvn clean install"
+alias mcp="mvn clean package"
 alias gcb="./gradlew clean build"
 #alias gr="./gradlew"
 alias gw="./gradlew"
@@ -126,11 +127,14 @@ alias hgs='hg st'
 alias hgd='hg diff'
 
 # Docker
+# Stop all running containers
 alias docker-stop='docker stop $(docker ps|tail -1|fawk NF)'
+alias docker-stop-all='docker stop $(docker ps -aq)'
+# Shell into the most recently started container
 alias docker-bash='docker exec -t -i $(docker ps|tail -1|fawk NF) /bin/bash'
 alias d='docker'
+alias d-c='docker-compose'
 alias dps='docker ps --format "table {{.ID}}\t{{.CreatedAt}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"'
-alias dly='dockly $DOCKER_HOST'
 
 #####################
 ##### Compiling #####

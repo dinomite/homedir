@@ -55,11 +55,11 @@ fi
 if [ -n "$BREW_PREFIX" ]; then
     # Homebrew installed extensions
     if [ -f $BREW_PREFIX/etc/bash_completion ]; then
-        . $BREW_PREFIX/etc/bash_completion
+        . $BREW_PREFIX/etc/bash_completion # 140ms
     fi
 
     if [ -f $BREW_PREFIX/etc/profile.d/autojump.sh ]; then
-        . $BREW_PREFIX/etc/profile.d/autojump.sh
+        . $BREW_PREFIX/etc/profile.d/autojump.sh # 10ms
     fi
 else
     # System installed extensions
@@ -79,9 +79,10 @@ if [ -z PS1 ]; then
 fi
 
 # Figure out what system we are on
-if [ `uname` = Darwin ]; then
+UNAME=`uname`
+if [ $UNAME = Darwin ]; then
     export OS_TYPE='macos'
-elif [ `uname` = FreeBSD ]; then
+elif [ $UNAME = FreeBSD ]; then
     export OS_TYPE='freebsd'
 else
     export OS_TYPE='linux'
@@ -110,7 +111,7 @@ export LANGUAGE="en_US.UTF-8"
 # Give Maven more memory
 export MAVEN_OPTS=-Xmx1024m
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # 200ms
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # 130ms
 
 ### Capture more history
 #"I know I've used that command before, but I can't remember the syntax"

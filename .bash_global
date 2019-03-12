@@ -50,7 +50,7 @@ PROMPT_COMMAND=build_prompt
 export AUTOJUMP_KEEP_SYMLINKS=1
 
 if hash brew 2> /dev/null; then
-    BREW_PREFIX=`brew --prefix`
+    BREW_PREFIX=/usr/local
 fi
 if [ -n "$BREW_PREFIX" ]; then
     # Homebrew installed extensions

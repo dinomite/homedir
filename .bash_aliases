@@ -127,14 +127,16 @@ alias hgs='hg st'
 alias hgd='hg diff'
 
 # Docker
-# Stop all running containers
+# Stop the most recently started container
 alias docker-stop='docker stop $(docker ps|tail -1|fawk NF)'
+# Stop all running containers
 alias docker-stop-all='docker stop $(docker ps -aq)'
 # Shell into the most recently started container
 alias docker-bash='docker exec -t -i $(docker ps|tail -1|fawk NF) /bin/bash'
 alias d='docker'
 alias d-c='docker-compose'
 alias dps='docker ps --format "table {{.ID}}\t{{.CreatedAt}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"'
+alias docker-fuck-everything='docker-stop-all; docker rm $(docker ps -a -q); docker system prune -a; docker volume rm $(docker volume ls|fawk 2)'
 
 #####################
 ##### Compiling #####

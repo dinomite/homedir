@@ -4,3 +4,4 @@ set ignorecase
 set smartcase
 set hlsearch
 imap jj <Esc>
+noremap Y y$

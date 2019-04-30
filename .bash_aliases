@@ -130,7 +130,7 @@ alias hgd='hg diff'
 # Stop the most recently started container
 alias docker-stop='docker stop $(docker ps|tail -1|fawk NF)'
 # Stop all running containers
-alias docker-stop-all='docker stop $(docker ps -aq)'
+alias docker-stop-all='docker stop $(docker ps -q)'
 # Shell into the most recently started container
 alias docker-bash='docker exec -t -i $(docker ps|tail -1|fawk NF) /bin/bash'
 alias d='docker'

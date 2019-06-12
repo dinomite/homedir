@@ -13,7 +13,7 @@
     br = branch
     pb = push -u origin
     f = fetch --all
-    pull = pull --rebasegit --autostash
+    pull = pull --rebase --autostash
     r = remote -v
     b = branch -a
     info = remote show origin
@@ -61,6 +61,7 @@
 	autocrlf = input
 [branch]
     autosetuprebase = always
+    autosetupmerge = always
 [push]
     default = current
     ;default = simple

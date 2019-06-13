@@ -63,6 +63,7 @@
 	autocrlf = input
 [branch]
     autosetuprebase = always
+    autosetupmerge = always
 [push]
     default = current
     ;default = simple

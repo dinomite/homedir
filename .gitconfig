@@ -1,6 +1,8 @@
 [user]
     name = Drew Stephens
     email = drew@dinomite.net
+[includeIf "gitdir:~/src/"]
+    path = ~/src/.gitconfig
 [log]
     date = relative
 [alias]
@@ -13,7 +15,7 @@
     br = branch
     pb = push -u origin
     f = fetch --all
-    pull = pull --rebasegit --autostash
+    pull = pull --rebase --autostash
     r = remote -v
     b = branch -a
     info = remote show origin
@@ -64,8 +66,14 @@
 [push]
     default = current
     ;default = simple
-
 [hub]
     protocol = https
 [credential]
 	helper = osxkeychain
+# check that anything we're getting is complete and sane on a regular basis
+[transfer]
+    fsckobjects = true
+[fetch]
+    fsckobjects = true
+[receive]
+    fsckobjects = true

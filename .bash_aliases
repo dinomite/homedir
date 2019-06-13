@@ -103,9 +103,6 @@ alias kb="./kobaltw"
 alias dig='dig +multiline +nocomments'
 alias routes='netstat -nr -f inet'
 
-# Python
-alias ugh='[ -d .venv ] || virtualenv .venv; . .venv/bin/activate'
-
 # Git
 alias gti='git'
 alias gitl='git l -n3'

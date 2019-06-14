@@ -91,11 +91,19 @@ alias ytrip="youtube-dl --max-quality 22 --output '%(title)s.%(ext)s'"
 alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security"
 # Things I usually want
 alias tcpdump="tcpdump -vvnX -s0"
-alias mci="mvn clean install"
-alias mcp="mvn clean package"
+
+# Maven
+alias mci='mvn clean install'
+alias mcit='mci -DskipTests'
+alias mcp='mvn clean package'
+alias mcpt='mcp -DskipTests'
+alias mct="mvn clean test"
+
+# Gradle
 alias gcb="./gradlew clean build"
 #alias gr="./gradlew"
 alias gw="./gradlew"
+
 alias rubocop="rubocop -DE"
 alias kb="./kobaltw"
 
@@ -124,16 +132,20 @@ alias hgs='hg st'
 alias hgd='hg diff'
 
 # Docker
-# Stop the most recently started container
-alias docker-stop='docker stop $(docker ps|tail -1|fawk NF)'
-# Stop all running containers
-alias docker-stop-all='docker stop $(docker ps -q)'
-# Shell into the most recently started container
-alias docker-bash='docker exec -t -i $(docker ps|tail -1|fawk NF) /bin/bash'
-alias d='docker'
-alias dkc='docker-compose'
+alias dk=docker
+alias dkc=docker-compose
+alias dcu='docker-compose up'
+alias dcb='docker-compose build base'
+# Show all running containers
 alias dps='docker ps --format "table {{.ID}}\t{{.CreatedAt}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"'
-alias docker-fuck-everything='docker-stop-all; docker rm $(docker ps -a -q); docker system prune -fa; docker volume rm $(docker volume ls|fawk 2)'
+# Stop all containers
+alias dsa='docker stop $(docker ps -q)'
+# Remove all containers
+alias drm='docker rm $(docker ps --filter 'status=exited' --format '{{.ID}}' | xargs)'
+# Remove all images
+alias drmi='docker rmi $(docker images | grep ^classpass | tr -s " " | cut -f 3 -d " " | xargs)'
+# Remove everything Docker knows about
+alias docker-smash='dsa; docker rm $(docker ps -a -q); docker system prune -a; docker volume rm $(docker volume ls -q)'
 
 #####################
 ##### Compiling #####

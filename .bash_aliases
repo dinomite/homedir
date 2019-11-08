@@ -1,7 +1,14 @@
 #########################
 ##### Basic Aliases #####
 #########################
-alias ls='ls $LS_OPTIONS'
+EXA=`/usr/bin/which exa`
+if [ ! -z "$EXA" ]; then
+    alias ls="exa"
+alias ltr="ls -ls modified"
+else
+    alias ls="ls $LS_OPTIONS"
+    alias ltr="ls -ltr"
+fi
 alias ll="ls -l"
 alias lo="ls -o"
 alias lh="ls -lh"
@@ -11,8 +18,6 @@ alias l="ls"
 alias s="ls"
 alias ld="ls -d"
 #alias rm="rm -i"    # Make rming a slow and painful process
-# Show most recent files at the bottom
-alias ltr="ls -ltr"
 
 # Why doesn't everyone have these?
 alias ..="cd .."

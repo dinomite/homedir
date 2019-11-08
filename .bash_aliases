@@ -137,6 +137,7 @@ alias hgs='hg st'
 alias hgd='hg diff'
 
 # Docker
+alias d=docker
 alias dk=docker
 alias dkc=docker-compose
 alias dcu='docker-compose up'

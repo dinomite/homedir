@@ -171,7 +171,7 @@ alias didius="ssh dinomite@10.1.1.254"
 alias juno="mosh dinomite@juno.dinomite.net"
 alias caligula="mosh dinomite@caligula.dinomite.net"
 alias router="ssh root@192.168.2.254"
-alias beaglebone="ssh -Y 192.168.2.45"
+alias beaglebone="ssh -Y 10.1.1.45"
 alias titus="ssh dinomite@titus.dinomite.net"
 alias congresslaw="ssh dinomite@congresslaw.net"
 

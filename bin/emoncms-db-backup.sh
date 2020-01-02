@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Backup the emoncms DB
+# Restore with:
+#   cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -u root --password=root DATABASE
 set -e
 
 BACKUP_DIR=/mnt/pescennius/backups/emoncms

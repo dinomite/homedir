@@ -131,7 +131,6 @@ alias gsrebase='git-svn-rebase'
 alias git-prune='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 
 # Mercurial
-alias gh='hg'
 alias hgl='hg lnp -l3'
 alias hgs='hg st'
 alias hgd='hg diff'

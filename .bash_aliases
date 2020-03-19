@@ -152,6 +152,9 @@ alias drm='docker rm $(docker ps --filter 'status=exited' --format '{{.ID}}' | x
 alias drmi='docker rmi $(docker images | grep ^classpass | tr -s " " | cut -f 3 -d " " | xargs)'
 # Remove everything Docker knows about
 alias docker-smash='dsa; docker rm $(docker ps -a -q); docker system prune -a; docker volume rm $(docker volume ls -q)'
+function docker-bash {
+    docker exec -t -i "$1" /bin/bash
+}
 
 #####################
 ##### Compiling #####

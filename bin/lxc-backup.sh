@@ -2,7 +2,7 @@
 # Backup LXC containers.  Recreate them with:
 #     lxc image import TARBALL --alias my-export
 #     lxc init my-export NEW-CONTAINER
-set -ex
+set -e
 
 BACKUP_DIR=/mnt/pescennius/backups/lxc
 HOSTS=($(lxc list -c n --format csv))

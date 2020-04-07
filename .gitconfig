@@ -5,6 +5,7 @@
     path = ~/src/.gitconfig
 [log]
     date = relative
+    ;date = iso
 [alias]
     tag = tag -a
     st = status -s -b

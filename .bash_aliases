@@ -68,7 +68,6 @@ elif [ $OS_TYPE = 'linux' ]; then
 fi
 
 alias which='type -a'
-alias h="history |rg"
 # Info pages are crap. make them slightly less so.
 alias info="info --vi-keys"
 # Why doesn't BitchX load the rc by default?

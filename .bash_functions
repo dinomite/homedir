@@ -1,6 +1,10 @@
 #####################
 ##### Functions #####
 #####################
+function h {
+    rg $@ ~/.bash_history
+}
+
 # Get the version of a Perl module
 function perlmodver {
     perl -M$1 -e 'print "Version " . $ARGV[0]->VERSION . " of " . $ARGV[0] . " is installed.\n"' $1

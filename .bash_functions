@@ -84,3 +84,20 @@ listening() {
         echo "Usage: listening [pattern]"
     fi
 }
+
+
+function gw() {
+    pushd . > /dev/null
+
+    while [[ ! -x ./gradlew && $PWD != '/' ]]; do
+        cd ..
+    done
+
+    if [[ -x ./gradlew ]] ; then
+        ./gradlew "$@"
+    else
+        echo "Could not find gradlew in any parent dir" >&2
+    fi
+
+    popd > /dev/null
+}

@@ -105,9 +105,7 @@ alias mcpt='mcp -DskipTests'
 alias mct="mvn clean test"
 
 # Gradle
-alias gcb="./gradlew clean build"
-#alias gr="./gradlew"
-alias gw="./gradlew"
+alias gcb="gw clean build"
 
 alias rubocop="rubocop -DE"
 alias kb="./kobaltw"

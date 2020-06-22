@@ -196,3 +196,7 @@ alias dev1db='mysql -u mgdev -h 192.168.10.97 -p mg'
 alias dev2db='mysql -u mgdev -h 192.168.30.111 -p mg'
 alias stg1db='mysql -u mg -h 192.168.30.63 -P 3307 -p mg'
 alias stg2db='mysql -u mg -h 192.168.30.63 -P 3308 -p mg'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/dinomite/.sdkman"
+[[ -s "/Users/dinomite/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/dinomite/.sdkman/bin/sdkman-init.sh"

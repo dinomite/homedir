@@ -68,17 +68,6 @@ function fuck() {
     fi
 }
 
-function mb() {
-  $(git rev-parse --show-toplevel)/scripts/monobuild.sh "$@"
-}
-
-# Better which(1)
-function which() {
-    for command in $(which docker-compose|cut -d ' ' -f 3); do
-        ls -lh "$command";
-    done
-}
-
 listening() {
     if [ $# -eq 0 ]; then
         sudo lsof -iTCP -sTCP:LISTEN -n -P

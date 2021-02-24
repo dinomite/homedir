@@ -1,5 +1,5 @@
 ### Paths
-PATH=$HOME/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:$HOME/.rvm/bin:/opt/android/tools:$PATH
+PATH=$HOME/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:$HOME/.rvm/bin:/opt/homebrew/bin:$PATH
 MANPATH=$HOME/.software/man:/opt/local/man:/opt/local/share/man:/usr/local/share/man:$MANPATH
 
 ### Prompt variable

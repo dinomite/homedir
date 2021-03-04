@@ -161,29 +161,3 @@ alias make='cowsay "make"; nice -n 10 make'
 alias javac='cowsay "javac"; javac'
 # Java with remote debugging enabled
 alias jdebug='java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005'
-
-###########################
-##### Remote Machines #####
-###########################
-alias septimius="ssh dinomite@10.1.1.253"
-alias didius="ssh dinomite@10.1.1.254"
-alias juno="mosh dinomite@juno.dinomite.net"
-alias caligula="mosh dinomite@caligula.dinomite.net"
-alias router="ssh root@192.168.2.254"
-alias beaglebone="ssh -Y 10.1.1.45"
-alias titus="ssh dinomite@titus.dinomite.net"
-alias congresslaw="ssh dinomite@congresslaw.net"
-
-##### CSH #####
-alias tempest="ssh dinomite@tempest.csh.rit.edu"
-alias fury="ssh dinomite@fury.csh.rit.edu"
-alias tonka="ssh dinomite@tonka.csh.rit.edu"
-alias whitefox="ssh dinomite@whitefox.csh.rit.edu"
-alias scorn="ssh scorn.csh.rit.edu"
-alias jake="ssh jake.csh.rit.edu"
-alias hactar="ssh jake.csh.rit.edu"
-alias rancor="ssh rancor.csh.rit.edu"
-
-##### Clearspring #####
-# Completion for cssh (see ~/bin/cssh)
-complete -F _ssh cssh

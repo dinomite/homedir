@@ -152,6 +152,8 @@ function docker-bash {
     docker exec -t -i "$1" /bin/bash
 }
 
+alias unpack_stacktrace="pbpaste | gsed -e 's/\sat\s/ !at /g' | tr '!' '\n' |pbcopy"
+
 #####################
 ##### Compiling #####
 #####################

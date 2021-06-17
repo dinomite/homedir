@@ -135,9 +135,9 @@ alias hgd='hg diff'
 # Docker
 alias d=docker
 alias dk=docker
-alias dkc=docker-compose
-alias dcu='docker-compose up'
-alias dcb='docker-compose build base'
+alias dkc='docker compose'
+alias dcu='docker compose up'
+alias dcb='docker compose build base'
 # Show all running containers
 alias dps='docker ps --format "table {{.ID}}\t{{.CreatedAt}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"'
 # Stop all containers

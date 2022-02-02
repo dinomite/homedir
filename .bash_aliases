@@ -109,8 +109,6 @@ alias gcb="gw clean build"
 alias rubocop="rubocop -DE"
 alias kb="./kobaltw"
 
-# Hide a bunch of crap in dig
-alias dig='dig +multiline +nocomments'
 alias routes='netstat -nr -f inet'
 
 # Git

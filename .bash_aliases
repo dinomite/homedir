@@ -39,7 +39,7 @@ alias GIR="GRI"
 alias IGR="GRI"
 alias IRG="GRI"
 # Ack is too hard to type
-alias a="ack"
+alias a="rg"
 alias avg="ack --invert-file-match -G"
 alias shead="sort|uniq -c|sort -rn|head"
 alias t="tail -F"

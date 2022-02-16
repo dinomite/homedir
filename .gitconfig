@@ -32,6 +32,7 @@
     prev = checkout @{-1}
     heads = for-each-ref --sort=-committerdate refs/heads/ --format='"%(refname:short) %1B[0;36m%(authorname)%1B[m %1B[0;33m%(committerdate)%1B[m"'
     tracked = ls-tree -r master --name-only
+    ignored = ls-files -v | grep "^[[:lower:]]"
 [color]
     branch = auto
     diff = auto

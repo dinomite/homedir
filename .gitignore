@@ -77,6 +77,8 @@
 .gradle/native
 .gradle/notifications/
 .gradle/wrapper
+.gradle/jdks/
+.gradle/.tmp/
 .grain
 .groovy
 .heroku
@@ -164,6 +166,7 @@ Pictures
 Public
 Seafile
 Sites
+SynologyDrive
 Transporter
 Virtualbox VMs
 clear

@@ -1,0 +1,193 @@
+{
+  "numStartups": 10,
+  "installMethod": "native",
+  "autoUpdates": false,
+  "tipsHistory": {
+    "ide-hotkey": 1,
+    "new-user-warmup": 8,
+    "plan-mode-for-complex-tasks": 7,
+    "terminal-setup": 1,
+    "memory-command": 2,
+    "theme-command": 2,
+    "status-line": 2,
+    "prompt-queue": 7,
+    "enter-to-steer-in-relatime": 2,
+    "todo-list": 2,
+    "# for memory": 2,
+    "install-github-app": 2,
+    "drag-and-drop-images": 2,
+    "paste-images-mac": 2,
+    "double-esc-code-restore": 2,
+    "continue": 2,
+    "shift-tab": 2,
+    "image-paste": 2,
+    "colorterm-truecolor": 4,
+    "install-slack-app": 4,
+    "desktop-app": 4,
+    "web-app": 4,
+    "mobile-app": 4,
+    "custom-agents": 6,
+    "agent-flag": 6
+  },
+  "cachedStatsigGates": {
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_use_file_checkpoints": true
+  },
+  "cachedGrowthBookFeatures": {
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 5000,
+      "maxExportBatchSize": 200,
+      "maxQueueSize": 8192
+    },
+    "tengu_mcp_tool_search": true,
+    "tengu_scratch": true,
+    "tengu_brass_pebble": false,
+    "tengu_event_sampling_config": {},
+    "tengu_log_segment_events": false,
+    "tengu_log_datadog_events": true,
+    "tengu_marble_anvil": true,
+    "tengu_tool_pear": false,
+    "tengu_scarf_coffee": false,
+    "tengu_keybinding_customization_release": true,
+    "tengu_c4w_usage_limit_notifications_enabled": true,
+    "tengu_thinkback": false,
+    "tengu_pid_based_version_locking": true,
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu-top-of-feed-tip": {
+      "tip": "",
+      "color": ""
+    },
+    "tengu_react_vulnerability_warning": false,
+    "tengu_code_diff_cli": true,
+    "tengu_pr_status_cli": true,
+    "tengu_post_compact_survey": false,
+    "tengu_claudeai_mcp_connectors": true,
+    "tengu_tool_search_unsupported_models": [
+      "haiku"
+    ],
+    "tengu_system_prompt_global_cache": true,
+    "tengu_attribution_header": true,
+    "enhanced_telemetry_beta": false,
+    "tengu_workout": false,
+    "tengu_marble_kite": false,
+    "tengu_vinteuil_phrase": false,
+    "tengu_coral_fern": false,
+    "tengu_cache_plum_violet": true,
+    "tengu_streaming_tool_execution2": true,
+    "tengu_tst_kx7": false,
+    "tengu_session_memory": false,
+    "tengu_cork_m4q": false,
+    "tengu_permission_explainer": true
+  },
+  "firstStartTime": "2025-09-30T15:00:56.979Z",
+  "userID": "0a355454aa3b4fc7974dca161191bcd29fe757c56dff94836a6e7f5e6a504b3b",
+  "projects": {
+    "/Users/dinomite/SynologyDrive/code/mine/youtube-podcast": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 4,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0.053835,
+      "lastAPIDuration": 34530,
+      "lastAPIDurationWithoutRetries": 34529,
+      "lastToolDuration": 0,
+      "lastDuration": 185001,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 1237,
+      "lastTotalOutputTokens": 1906,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 10.57,
+      "lastFpsLow1Pct": 191.4,
+      "lastModelUsage": {
+        "claude-opus-4-5-20251101": {
+          "inputTokens": 1237,
+          "outputTokens": 1906,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.053835
+        }
+      },
+      "lastSessionId": "09819955-0afc-4e9e-b20f-7810c5856d7c",
+      "exampleFiles": [
+        "Application.kt",
+        "Routing.kt",
+        "ApplicationTest.kt",
+        "build.gradle.kts",
+        "logback.xml"
+      ],
+      "exampleFilesGeneratedAt": 1770164594471
+    }
+  },
+  "sonnet45MigrationComplete": true,
+  "changelogLastFetched": 1770164593658,
+  "claudeCodeFirstTokenDate": "2025-09-30T15:02:03.556510Z",
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.0.0",
+  "hasOpusPlanDefault": false,
+  "lastReleaseNotesSeen": "2.1.30",
+  "fallbackAvailableWarningThreshold": 0.5,
+  "isQualifiedForDataSharing": false,
+  "s1mAccessCache": {
+    "6cded0f3-271d-40c4-92ee-05c977cab119": {
+      "hasAccess": false,
+      "hasAccessNotAsDefault": false,
+      "timestamp": 1770163964963
+    }
+  },
+  "opus45MigrationComplete": true,
+  "opusProMigrationComplete": true,
+  "opusProMigrationTimestamp": 1769958385081,
+  "thinkingMigrationComplete": true,
+  "cachedChromeExtensionInstalled": false,
+  "autoUpdatesProtectedForNative": true,
+  "githubRepoPaths": {
+    "dinomite/youtube-podcast": [
+      "/Users/dinomite/SynologyDrive/code/mine/youtube-podcast"
+    ]
+  },
+  "hasShownOpus45Notice": {
+    "6cded0f3-271d-40c4-92ee-05c977cab119": true
+  },
+  "hasIdeOnboardingBeenShown": {
+    "intellij": true
+  },
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": true,
+  "groveConfigCache": {
+    "1200a278-a17f-45d9-92c4-677cff70d35d": {
+      "grove_enabled": true,
+      "timestamp": 1770164593334
+    }
+  },
+  "oauthAccount": {
+    "accountUuid": "1200a278-a17f-45d9-92c4-677cff70d35d",
+    "emailAddress": "drew@dinomite.net",
+    "organizationUuid": "6cded0f3-271d-40c4-92ee-05c977cab119",
+    "hasExtraUsageEnabled": false,
+    "displayName": "Foo",
+    "organizationRole": "admin",
+    "workspaceRole": null,
+    "organizationName": "drew@dinomite.net's Organization"
+  },
+  "anonymousId": "claudecode.v1.a3dcb6ac-e516-484a-8f68-9e2d9978bfee",
+  "clientDataCache": {
+    "data": {},
+    "timestamp": 1770164682774
+  }
+}

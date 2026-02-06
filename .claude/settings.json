@@ -1,0 +1,10 @@
+{
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  },
+  "model": "opus",
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline-command.sh"
+  }
+}
